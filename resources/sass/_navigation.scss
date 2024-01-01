@@ -1,0 +1,73 @@
+.nav-mobile {
+    display:none;
+}
+
+.custom-navbar {
+    font-family: $font-family-headlines;
+    width: 100%;
+    height: auto;
+    max-height: 50px;
+    background-color: $gray-800; // rgba(66,66,66,1);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+.topbar-icon {
+    display: none;
+    position: absolute;
+    top: 5px; 
+    right: 5px;
+}
+
+.nav-item {
+    border-right:1px solid rgba(66,66,66,1);
+}
+
+a.nav-link {
+    background-color: $custom-lightgreen;
+    color: #000;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    transition: all .5s;    
+}
+a.nav-link:hover {
+    background-color: $custom-green;
+    color:#fff;
+    transition: all .5s;
+}
+a.nav-cms {
+    display:block;
+    background-color: $custom-orange;
+    border-bottom: 1px solid rgba(66,66,66,1);
+    color: #000;
+    text-decoration: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    line-height: 50%;
+    height: 100%;
+    transition: all .5s;    
+}
+a.nav-cms:hover {
+    background-color: $custom-pink;
+    color:#fff;
+    transition: all .5s;
+}
+
+// what happens if the menu is mobile
+.topbar-ul.responsive {
+    background-color: $gray-800;
+    margin-top:40px;
+    float:none;
+    display:block;
+    height: 100vh;
+    padding-top: 20px;
+
+    .nav-item {
+        float: none;
+        display: block;
+        z-index: 10000;
+        border-bottom:1px solid $gray-900;
+    }
+}

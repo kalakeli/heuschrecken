@@ -1,0 +1,116 @@
+// Body
+$body-bg: #f8fafc;
+
+/* -------bootstrap colours -------- */   
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+
+/* -------begin customization-------- */   
+$theme-colors: (
+    custom-darkgreen: #386641,
+    custom-green: #6a994e,
+    custom-lightgreen: #a7c957,
+    custom-orange: #f4a261,
+    custom-pink: #e76f51,
+    custom-yellow: #e9c46a, 
+    primary:       $blue,
+    secondary:     $gray-600,
+    success:       $green,
+    info:          $cyan,
+    warning:       $yellow,
+    danger:        $red,
+    light:         $gray-100,
+    dark:          $gray-900,  
+);
+/* -------end customization-------- */ 
+
+// Typography
+$font-family-headlines: 'Oswald', sans-serif;
+// $font-family-headlines: 'EB Garamond', serif;
+$font-size-headline: 2.8rem;
+$font-size-headline2: 2.2rem;
+$font-style-headline: italic;
+$font-family-emphasize: 'Roboto Serif', serif; 
+$font-family-basic: 'Roboto', serif; 
+$font-size-basic: 1.1rem;
+$font-style-basic: normal;
+$line-height-basic: 1.6;
+$font-size-lists: 1rem;
+$font-size-smaller: .9rem;
+$line-height-lists: 1.6;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+
+$custom-darkgreen: #386641;
+$custom-green: #6a994e;
+$custom-lightgreen: #a7c957;
+$custom-orange: #f4a261;
+$custom-pink: #e76f51;
+$custom-yellow: #e9c46a;
+
+
+// Colors
+$custom-blue: #0061a1;
+$custom-highlight: rgb(246,169,36);
+$custom-lightgrey: rgb(209,214,218);
+$custom-text: rgb(111,111,111);
+$custom-darktext: rgb(66,66,66);
+$custom-red: #cf003d;
+$custom-grey: #a3abb1;
+
+$custom-warning: #E66560;
+
+
+
+/* convert to classes */
+.custom-blue { color: #0061a1; }
+.custom-highlight { color: rgb(246,169,36); }
+.custom-green { color:#3B763D; }
+.custom-lightgreen { color:#2a9d8f;; }
+.custom-grey { color: rgb(163,171,177); }
+.custom-lightgrey { color: rgb(209,214,218); }
+.custom-red { color: rgb(207,0,61); }
+.custom-yellow { color: rgb(255,225,68); }
+.custom-text { color: rgb(111,111,111); }
+.custom-darktext { color: rgb(66,66,66); }
+.custom-warning { color: #E66560; }
+.bg-blue { background-color: #0061a1; }
+.bg-highlight { background-color: rgb(246,169,36); }
+.bg-green { background-color: rgb(0,117,92); }
+.bg-grey { background-color: rgb(163,171,177); }
+.bg-lightgrey { background-color: rgb(209,214,218); }
+.bg-red { background-color: rgb(207,0,61); }
+.bg-yellow { background-color: rgb(255,225,68); }
+.bg-text { background-color: rgb(111,111,111); }
+.bg-darktext { background-color: rgb(66,66,66); }
+.bg-warning { background-color: #E66560; }
+.blue { color: #3490dc; }
+.indigo { color: #6574cd; }
+.purple { color: #9561e2; }
+.pink { color: #f66D9b; }
+.red { color: #e3342f; }
+.orange { color: #f6993f; }
+.yellow { color: #ffed4a; }
+.green { color: #38c172; }
+.teal { color: #4dc0b5; }
+.cyan { color: #6cb2eb; }

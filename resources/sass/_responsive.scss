@@ -1,0 +1,96 @@
+@media (max-width: 767px) {
+    .topbar-ul li.nav-item {
+        display: none;
+    }
+    .topbar-icon {
+        display: block;
+    }     
+}
+
+@media (min-width: 576px) {
+    .no-mobile {
+        display: none;
+    }   
+
+    h2.img-info-text {
+        font-size: 1rem;
+        transition: all .3s;
+    }        
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .no-mobile {
+        display: block;
+    }   
+    h2.img-info-text {
+        font-size: 1.2rem;
+        transition: all .3s;
+    }  
+    .custom-navbar {
+        font-size: .8rem;
+        max-height: 40px;
+        transition: all .3s;
+    }  
+    .nav-link {
+        height:40px;
+        transition: all .3s;
+    }  
+    #topbar-title {
+        font-size: 1rem;
+        transition: all .3s;
+    }
+    .topbar-icon {
+        display: none;
+    }
+    // #topbar-title {
+    //     opacity: 1;
+    //     visibility: visible;
+    // }       
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .no-mobile {
+        display: block;
+    }   
+    h2.img-info-text {
+        font-size: 1.4rem;
+        transition: all .3s;
+    }
+    .custom-navbar {
+        font-size: 1rem;
+        max-height: 50px;
+        transition: all .3s;
+    }  
+    .nav-link {
+        height:50px;
+        transition: all .3s;
+    }  
+    #topbar-title {
+        font-size: 1.2rem;
+        transition: all .3s;
+    }      
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .no-mobile {
+        display: block;
+    }   
+    h2.img-info-text {
+        font-size: 1.8rem;
+        transition: all .3s;
+    }    
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .no-mobile {
+        display: block;
+    }   
+    h2.img-info-text {
+        font-size: 1.8rem;
+        transition: all .3s;
+    }      
+}

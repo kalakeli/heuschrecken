@@ -1,0 +1,452 @@
+ // Variables
+@import 'variables';
+
+ // Nabigation
+@import 'navigation';
+
+
+// Bootstrap
+// @import 'bootstrap/scss/bootstrap';
+
+/* -------------------------------------------------------------------
+   preload einiges speicherintensiver Bilder
+   Technik ist so simpel wie effektiv, die Bilder werden an das 
+   content-Attribut von body gehängt und im Hintergrund geladen   
+   ------------------------------------------------------------------- */
+   body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
+    // content: url(./../../images/species/tettigonia_cantans_larve_dponiatowski.jpg)
+    //          url(./../../images/species/tetrix_bipunctata_dponiatowski.jpg)
+    //          url(./../../images/species/psophus_stridulus_dponiatowski.jpg)
+    //          url(./../../images/species/pseudochorthippus_parallelus_dponiatowski.jpg)
+    //          url(./../../images/species/ruspolia_nitidula_dponiatowski.jpg) ;
+ }
+
+
+/* ------- beginn my styles-------- */  
+body, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: $font-family-basic;
+  font-size: $font-size-basic;
+  color: $gray-800;
+  background-image: linear-gradient(to bottom, #e9ecef, #fff);
+  background-attachment: fixed;
+  // scroll-behavior: none;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-headlines;
+  font-weight: 200;
+}
+h1.title {
+  font-weight: 400;
+}
+h3 {
+  font-weight: 400;
+}
+
+.headline {
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid #414142;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-logo {
+    float: right;
+}
+
+.authors {
+  font-family: $font-family-headlines;
+  font-variant: small-caps;
+}
+
+figcaption {
+  margin-top: .6rem;
+  font-size: smaller; 
+  font-style: italic;
+  color: $gray-500;
+}
+
+#topbar-title {
+  opacity: 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Footer
+|--------------------------------------------------------------------------
+*/
+footer {
+  // position:absolute;
+  // bottom: 0;
+  width: 100vW;
+  height: auto;
+  font-family: $font-family-headlines;
+  font-weight: lighter;
+  color: $gray-600;
+  background-color: #fff; 
+  border-top: 1px solid #d9d9d9;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Transitions
+|--------------------------------------------------------------------------
+*/
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Banner-Image
+|--------------------------------------------------------------------------
+*/
+.img-banner {
+  position: relative;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, .3);
+
+  figcaption {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: smaller;
+    text-align: right;
+    color:rgba(255,255,255, 0.6);
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+  }
+
+  .img-info {
+    height: 100%;
+    width: 30%;
+    background-color: rgba(255,255,255, 0.4);
+    border-right: 1px solid rgba(0,0,0, 0.4);
+    position: absolute;
+    left: 0;    
+    top: 0;
+    z-index: 10;
+    
+    // Artinfo
+    .img-info-text {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      padding: 1rem;
+      transform: translate(0, -50%);
+      text-align: center;
+      z-index: 11;
+    }
+    // Button f. OrthopteraWeb
+    .img-btn {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      z-index: 11;
+    }
+  }
+}
+
+.text-gender {
+  font-size:larger;
+  font-style:lighter;
+  font-family: $font-family-basic;
+}
+
+.form-error {
+  padding-top: .6rem;
+  color: $red;
+  font-size: smaller;
+}
+
+
+/* -------------------------------------------------------------------
+    Listen
+    ------------------------------------------------------------------- */
+    ul.pubList, ul.checkedList {
+    list-style-type: none;
+    margin-left: 25px;
+  }
+  ul.pubList li,  ul.checkedList li  {
+    margin-left:24px;
+  }
+  ul.pubList li::before, ul.checkedList li::before {
+      padding-right: 8px;
+      margin-left: -26px;
+  }
+  .more::before, ul.pubList li::before {
+      content: "\f138";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      padding-right: 8px;
+  }
+  ul.checkedList li::before {
+      content: "\f00c";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      padding-right: 8px;
+  }
+
+
+/*
+|--------------------------------------------------------------------------
+| pre-defined icons 
+|--------------------------------------------------------------------------
+*/
+.icon {
+  cursor: pointer;
+ }
+ .icon:before {
+   display: inline-block;
+   font-style: normal;
+   font-variant: normal;
+   text-rendering: auto;
+   -webkit-font-smoothing: antialiased;
+   font-family: "Font Awesome 5 Free";
+   font-weight: 900;
+ }
+.anchor::before {
+  color: inherit;  content: "\f124";  /* Link */
+/*  color: $dda-blue;  content: "\f124";  /* Link */
+}
+.archive::before {
+  color: inherit;  content: "\f1c6";  /* ZIP Archiv */
+}
+.back::before {
+  color: inherit;  content: "\f137";  /* chevron in box nach links */
+}
+.checked::before {
+ color: 'inherit'; content: "\f058";  /* check in circle */
+}
+.checkedPlain::before {
+ color: 'inherit'; content: "\f00c";  /* plain check */
+}
+.delete::before {
+  color: inherit; content: "\f057";  /* times in circle */
+}
+.download::before {
+  color: inherit; content: "\f019";  /* arrow down */
+}
+.edit::before {
+  color: inherit; content: "\f303";  /* pencil */
+}
+.editSquare::before {
+  color: inherit; content: "\f14b";  /* pencil in box */
+}
+.envelope::before {
+  color: inherit; content: "\f0e0";  /* envelope */
+}
+.exclamation::before {
+  color: inherit; content: "\f06a";  /* ! in circle */
+}
+.female::before {
+  color: inherit; content: "\f221";  /* venus sign */
+ }    
+.forward::before {
+  color: inherit;  content: "\f138";  /* chevron in box nach rechts */
+}
+.list::before {
+  color: inherit;  content: "\f03a";  /* Liste  */
+}
+.mandatory::before {
+  color: $red; content: "\f005";  /* star */
+  cursor: auto;
+}
+.male::before {
+  color: inherit; content: "\f222";  /* mars sign */
+ }    
+.minus::before {
+  color: inherit; content: "\f068";  /* minus sign */
+}
+.more::before {
+  color: inherit; content: "\f0a9";  /* arrow in circle */
+}
+.plus::before {
+  color: inherit; content: "\2b";  /* arrow in circle */
+}
+.save::before {
+  color: inherit; content: "\f0c7";  /* disk */
+ }
+.search::before {
+  color: inherit; content: "\f002";  /* lupe */
+ }
+.times::before {
+  color: inherit; content: "\f00d";  /* times symbol */
+}
+
+
+/* -------------------------------------------------------------------
+  Tabellenfelder
+  ------------------------------------------------------------------- */
+.btnWidth {
+  width: 36px;  max-width: 36px;  min-width: 36px;
+}
+.miniWidth {
+  width: 64px;  max-width: 64px;  min-width: 64px;
+}
+.dateWidth {
+  width: 128px; max-width: 128px; min-width: 128px;
+}
+.smallWidth {
+  width: 96px;  max-width: 96px;  min-width: 96px;
+}
+.shortWidth {
+  width: 128px; max-width: 128px; min-width: 128px;
+}
+.mediumWidth {
+  width: 256px; max-width: 256px; min-width: 256px;
+}
+.longWidth {
+  width: 512px; max-width: 512px; min-width: 512px;
+}
+
+    
+
+/* -------------------------------------------------------------------
+SCROLL BACK TO TOP - BUTTON
+------------------------------------------------------------------- */
+  #btnTop {
+    display: inline-block;
+    background-color: $custom-darktext;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    border:3px solid #fff;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 75px;
+    right: 40px;
+    // -webkit-box-shadow: 3px 3px 10px 0px rgba(113,113,119,0.75);
+    // -moz-box-shadow: 3px 3px 10px 0px rgba(113,113,119,0.75);
+    // box-shadow: 3px 3px 10px 0px rgba(113,113,119,0.75);    
+       
+    transition: 
+      background-color .3s,
+      box-shadow .3s,
+      opacity .5s, 
+      visibility .5s;
+    opacity: 0;
+    // visibility: hidden;
+    z-index: 1000;
+  }
+  #btnTop::after {
+    content: "\f077";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #btnTop:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(169,169,169,0.75);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(169,169,169,0.75);
+    box-shadow: 10px 10px 30px 15px rgba(169,169,169, 0.2),  
+               -10px -10px 30px 15px rgba(169,169,169,0.2), 
+               10px -10px 30px 15px rgba(169,169,169,0.2), 
+               -10px 10px 30px 15px rgba(169,169,169,0.2);
+    background-color: $custom-darktext;
+  }
+  #btnTop:active {
+    background-color: $custom-grey;
+  }
+  #btnTop.show {
+    opacity: 1;
+    // visibility: visible;
+    transition: all .3s;
+  }
+
+
+  /* -------------------------------------------------------------------
+     cover spin - ueber die ganze Seite ein Layer mit Spinning Symbol
+     ------------------------------------------------------------------- */
+     #cover-spin {
+      position:fixed;
+      width:100%;
+      left:0;right:0;top:0;bottom:0;
+      background-color: rgba(255,255,255,0.7);
+      z-index:9999;
+      display:none;
+  }
+ 
+  @-webkit-keyframes spin {
+    from {-webkit-transform:rotate(0deg);}
+    to {-webkit-transform:rotate(360deg);}
+  }
+ 
+  @keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+  }
+ 
+  #cover-spin::after {
+      content:'';
+      display:block;
+      position:absolute;
+      left:48%;top:40%;
+      width:40px;height:40px;
+      border-style:solid;
+      border-color:black;
+      border-top-color:transparent;
+      border-width: 4px;
+      border-radius:50%;
+      -webkit-animation: spin .8s linear infinite;
+      animation: spin .8s linear infinite;
+  }  
+
+/* -------------------------------------------------------------------
+MISC 
+------------------------------------------------------------------- */
+input::placeholder {
+  font-style: italic;
+  color:rgba(0,0,0, 0.4) !important;
+}
+
+.scroll-500 {
+  min-height: 500px;
+  max-height: 500px;
+  overflow: scroll;
+}
+.scroll-600 {
+  min-height: 600px;
+  max-height: 600px;
+  overflow: scroll;
+}
+
+ // Variables
+ @import 'responsive';  
