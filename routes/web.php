@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', [App\Http\Controllers\PagesController::class, 'welcome'] );
 
 Auth::routes();
 
@@ -33,14 +34,24 @@ Route::get('/methodik', [App\Http\Controllers\PagesController::class, 'methods']
 Route::get('/projekte', [App\Http\Controllers\PagesController::class, 'projects'] );
 Route::get('/artenliste', [App\Http\Controllers\PagesController::class, 'species'] );
 
+// Route::middleware('auth')->group(function () {
+//     Route::get('/cms', function () { return view('pages.cms'); });
+// });
+
 Route::middleware('auth')->group(function () {
-    Route::get('/cms', function () { return view('pages.cms'); });
+    Route::get('/cms', [App\Http\Controllers\PagesController::class, 'cms'] );
 });
 
 
-Route::get('/cms/{catchall?}', ['as' => 'start', 'middleware' => 'auth', function() {
-    return view('pages.cms');
-}])->where('catchall', '.*');
+// Route::get('/cms/{catchall?}', ['as' => 'start', 'middleware' => 'auth', function() {
+//     return view('pages.cms');
+// }])->where('catchall', '.*');
+
+Route::get('/cms/{catchall?}', 
+    ['as' => 'start', 'middleware' => 'auth', 
+        [App\Http\Controllers\PagesController::class, 'cms'] 
+    ]
+)->where('catchall', '.*');
 
 // Universal-Antwort - fuer alle, die falsch sind
 Route::get('/methodik/{path}',[App\Http\Controllers\PagesController::class, 'methods'])->where( 'path', '.*' );
