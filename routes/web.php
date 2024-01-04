@@ -20,12 +20,18 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/datenschutz', function () { return view('pages.datenschutz'); });
-Route::get('/impressum', function () { return view('pages.imprint'); });
-Route::get('/orthopteraweb', function () { return view('pages.orthopteraweb'); });
-Route::get('/methodik', function () { return view('pages.methodikliste'); });
-Route::get('/projekte', function () { return view('pages.projektliste'); });
-Route::get('/artenliste', function () { return view('pages.artenliste'); });
+// Route::get('/datenschutz', function () { return view('pages.datenschutz'); });
+// Route::get('/impressum', function () { return view('pages.imprint'); });
+// Route::get('/orthopteraweb', function () { return view('pages.orthopteraweb'); });
+// Route::get('/methodik', function () { return view('pages.methodikliste'); });
+// Route::get('/projekte', function () { return view('pages.projektliste'); });
+// Route::get('/artenliste', function () { return view('pages.artenliste'); });
+Route::get('/datenschutz', [App\Http\Controllers\PagesController::class, 'dsgvo'] );
+Route::get('/impressum', [App\Http\Controllers\PagesController::class, 'imprint'] );
+Route::get('/orthopteraweb', [App\Http\Controllers\PagesController::class, 'orthopteraweb'] );
+Route::get('/methodik', [App\Http\Controllers\PagesController::class, 'methods'] );
+Route::get('/projekte', [App\Http\Controllers\PagesController::class, 'projects'] );
+Route::get('/artenliste', [App\Http\Controllers\PagesController::class, 'species'] );
 
 Route::middleware('auth')->group(function () {
     Route::get('/cms', function () { return view('pages.cms'); });
