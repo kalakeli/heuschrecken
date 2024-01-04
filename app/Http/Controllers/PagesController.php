@@ -8,6 +8,16 @@ class PagesController extends Controller
 {
 
     /**
+     * cms
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function cms()
+    {
+        return view('pages.cms');
+    }
+
+    /**
      * Ziel, wenn irgendein Unsinn eingegeben wurde.
      *
      * @return \Illuminate\Contracts\Support\Renderable
@@ -28,6 +38,26 @@ class PagesController extends Controller
     }
 
     /**
+     * Impressum
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function imprint()
+    {
+        return view('pages.imprint');
+    }
+
+    /**
+     * Datenschutz
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function dsgvo()
+    {
+        return view('pages.datenscbutt');
+    }
+
+    /**
      * Hier landen Unterseiten von Projekten und werden von dort weitergeleitet.
      *
      * @return \Illuminate\Contracts\Support\Renderable
@@ -35,6 +65,16 @@ class PagesController extends Controller
     public function methods()
     {
         return view('pages.methodikliste');
+    }
+
+    /**
+     * Orthoptera.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function orthopteraweb()
+    {
+        return view('pages.orthopteraweb');
     }
 
     /**
@@ -55,5 +95,15 @@ class PagesController extends Controller
     public function species()
     {
         return view('pages.artenliste');
+    }    
+
+    /**
+     *  Welcome-Seite.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function welcome()
+    {
+        return view('welcome');
     }    
 }
