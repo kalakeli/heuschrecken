@@ -62,7 +62,9 @@ Route::get('/species/by/url/{url}', [App\Http\Controllers\SpeciesController::cla
 Route::get('/species/{id}/images', [App\Http\Controllers\ImageController::class, 'getSpeciesImages']);
 Route::get('/species/{id}/occurences/last/{nr}', [App\Http\Controllers\SpeciesController::class, 'getLastOccurences']);
 
-
+// USERS
+Route::get('/users', [App\Http\Controllers\UserController::class, 'index']);
+Route::get('/users/{id}', [App\Http\Controllers\UserController::class, 'getUser']);
 
 /*
 |--------------------------------------------------------------------------

@@ -2,13 +2,15 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <!-- <base href="http://localhost:8000"> -->
-    <base href="https://www.heuschrecken-monitoring.de/heuschrecken/Live">    
+    <base href="https://www.heuschrecken-monitoring.de">    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>{{ config('app.name', 'Die Heuschrecken Deutschlands') }}</title>
 
    <!-- Scripts -->
@@ -38,6 +40,9 @@
 </head>
 <body>
     <div id="app">
+        @if (Auth::user())
+            <input type="hidden" id="userID" value="{{ Auth::user()->id }}">
+        @endif          
         <!-- top button -->
         <button class="btn" id="btnTop" title="zum Beginn der Seite scrollen" onclick="toTop()"></button>
         <!-- loading sign -->

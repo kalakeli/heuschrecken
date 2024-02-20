@@ -2,7 +2,7 @@
     <div>
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="title mt-2 mb-3">Projekte</h1>
+                <h1 class="title mt-2 mb-3">Projects</h1>
             </div>
         </div>
         <transition name="fade" class="slide-fade">
@@ -11,14 +11,14 @@
                     <div class="row" >
                         <div class="col-lg-3 col-md-4 col-sm-5 col-12">
                             <figure v-if="item.theImg_mi">
-                                <img :src="item.theImg_mi" class="img-fluid img-thumbnail" :alt="item.imgTitle">
+                                <img :src="item.theImg_mi" class="img-fluid img-thumbnail" :alt="item.imgTitle_EN">
                             </figure>
                         </div>
                         <div class="col-lg-9 col-md-8 col-sm-7 col-12">
-                            <h4  v-html="`<small><small>${item.formattedDate}</small></small>&nbsp; ${item.projectTitle}`"></h4>
-                            <small class="card-text" v-html="`${item.projectTeaser}.`"></small>
+                            <h4  v-html="`<small><small>${item.formattedDate}</small></small>&nbsp; ${item.projectTitle_EN}`"></h4>
+                            <small class="card-text" v-html="`${item.projectTeaser_EN}.`"></small>
                             <p>
-                                <a :href="`/projekte/${item.projectUrl}`" class="btn btn-sm btn-custom-darkgreen"><span class="icon more"></span> mehr anzeigen</a>
+                                <a :href="`/projects/${item.projectUrl}`" class="btn btn-sm btn-custom-darkgreen"><span class="icon more"></span> show more</a>
                             </p>
                         </div>
                     </div>
@@ -28,10 +28,10 @@
         <div class="row">
             <div class="col-12 text-end">
                 <p class="title mt-2 mb-3">
-                    <a href="projekte">
+                    <a href="projects">
                         <button class="btn btn-sm btn-custom-lightgreen"> &nbsp;&nbsp;
                             <span class="icon more"></span>
-                            zu allen Projekten&nbsp;&nbsp;
+                            to all projects&nbsp;&nbsp;
                         </button>                        
                     </a>
                 </p>
@@ -44,10 +44,6 @@
 <script>
 
   import { defineComponent } from 'vue';
-  import * as dayjs from 'dayjs'
-  import 'dayjs/locale/de' 
-
-
   export default defineComponent({
         name: "LandingPageProjects",
         data() {
@@ -69,7 +65,7 @@
                         {
                             // self.items = response.data;
                             self.projectList = response.data.map( (item) => {
-                                item.formattedDate = dayjs(item.dateOfPublication).locale('de').format('DD.MM.YYYY')
+                                item.formattedDate = new Intl.DateTimeFormat('de-DE').format(new Date(item.dateOfPublication));
                                 return item;
                             });
                             self.nrOfEntries = response.data.length;

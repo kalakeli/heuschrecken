@@ -59,6 +59,10 @@ h3 {
 a {
   text-decoration: none;
 }
+.active-item {
+  background-color: $custom-green !important;
+  color:white !important;
+}
 
 .header-logo {
     float: right;

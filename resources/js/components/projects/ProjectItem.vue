@@ -29,9 +29,6 @@
 <script>
 
   import { defineComponent } from 'vue';
-  import * as dayjs from 'dayjs'
-  import 'dayjs/locale/de' 
-
 
   export default defineComponent({
         name: "ProjectItem",
@@ -52,7 +49,7 @@
                         if ((response.data))
                         {
                             self.theProjects = response.data.map( (item) => {
-                                item.formattedDate = dayjs(item.dateOfPublication).locale('de').format('DD.MM.YYYY')
+                                item.formattedDate = new Intl.DateTimeFormat('de-DE').format(new Date(item.dateOfPublication));
                                 item.img_sm = "images/" + item.imgPath + "/" + item.imgFN.substr(0, item.imgFN.lastIndexOf(".")) + "_sm." + item.imgFN.substr((item.imgFN.lastIndexOf(".")+1) - item.imgFN.length);
                                 item.img_lg = "images/" + item.imgPath + "/" + item.imgFN.substr(0, item.imgFN.lastIndexOf(".")) + "_lg." + item.imgFN.substr((item.imgFN.lastIndexOf(".")+1) - item.imgFN.length);
                                 item.img_xl = "images/" + item.imgPath + "/" + item.imgFN.substr(0, item.imgFN.lastIndexOf(".")) + "_xl." + item.imgFN.substr((item.imgFN.lastIndexOf(".")+1) - item.imgFN.length);

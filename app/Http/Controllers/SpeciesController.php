@@ -136,7 +136,7 @@ class SpeciesController extends Controller
         return Species::join('lutSystematik as lutOrders', 'lutOrders.lutPKID', 'tblSpecies.orderID')
               ->join('lutSystematik as lutFamilies', 'lutFamilies.lutPKID', 'tblSpecies.familyID')
               ->join('lutSystematik as lutSubFamilies', 'lutSubFamilies.lutPKID', 'tblSpecies.subFamilyID')
-              ->select(\DB::raw('tblSpecies.*, lutOrders.germanName as orderGerman, lutFamilies.germanName as familyGerman, lutFamilies.scientificName as familyScientific, lutSubFamilies.germanName as subFamilyGerman, lutSubFamilies.scientificName as subFamilyScientific, lutOrders.scientificName as orderScientific '))
+              ->select(\DB::raw('tblSpecies.*, lutOrders.germanName as orderGerman, lutFamilies.germanName as familyGerman, lutFamilies.englishName as familyEnglish, lutFamilies.scientificName as familyScientific, lutSubFamilies.germanName as subFamilyGerman, lutSubFamilies.scientificName as subFamilyScientific, lutOrders.scientificName as orderScientific '))
               ->where('tblSpecies.germanName', 'LIKE', $url)   
               ->orWhere('tblSpecies.scientificName', 'LIKE', $url)   
               ->get();
@@ -151,17 +151,17 @@ class SpeciesController extends Controller
     {
         // return Species::join('lutOrders', 'lutOrders.lutPKID', 'orderID')
         //     ->join('lutFamilies', 'tblSpecies.familyID', 'lutFamilies.lutPKID')
-        //     ->select(\DB::raw('tblSpecies.*, lutOrders.germanName as orderGerman, lutFamilies.germanName as familyGerman, lutFamilies.scientificName as familyScientific, lutOrders.scientificName as orderScientific '))
+        //     ->select(\DB::raw('tblSpecies.*, lutOrders.germanName as orderGerman, lutFamilies.germanName as familyGerman, lutFamilies.englishName as familyEnglish, lutFamilies.scientificName as familyScientific, lutOrders.scientificName as orderScientific '))
         //     ->orderBy('familyID', 'ASC')
         //     ->orderBy('germanName', 'ASC')
         //     ->get();
-
         return Species::join('lutSystematik as lutOrders', 'lutOrders.lutPKID', 'tblSpecies.orderID')
             ->join('lutSystematik as lutFamilies', 'lutFamilies.lutPKID', 'tblSpecies.familyID')
             ->join('lutSystematik as lutSubFamilies', 'lutSubFamilies.lutPKID', 'tblSpecies.subFamilyID')
-            ->select(\DB::raw('tblSpecies.*, lutOrders.germanName as orderGerman, lutFamilies.germanName as familyGerman, lutFamilies.scientificName as familyScientific, lutSubFamilies.germanName as subFamilyGerman, lutSubFamilies.scientificName as subFamilyScientific, lutOrders.scientificName as orderScientific '))
+            ->select(\DB::raw('tblSpecies.*, lutOrders.germanName as orderGerman, lutFamilies.germanName as familyGerman, lutFamilies.englishName as familyEnglish, lutFamilies.scientificName as familyScientific, lutSubFamilies.germanName as subFamilyGerman, lutSubFamilies.scientificName as subFamilyScientific, lutOrders.scientificName as orderScientific '))
+            ->where('tblSpecies.flagShow', '=', 1)
             ->orderBy('tblSpecies.familyID', 'ASC')
-            ->orderBy('tblSpecies.scientificName', 'ASC')            
+            ->orderBy('tblSpecies.scientificName', 'ASC')
             ->get();
     }
 
@@ -210,7 +210,7 @@ class SpeciesController extends Controller
         return Species::join('lutSystematik as lutOrders', 'lutOrders.lutPKID', 'tblSpecies.orderID')
             ->join('lutSystematik as lutFamilies', 'lutFamilies.lutPKID', 'tblSpecies.familyID')
             ->join('lutSystematik as lutSubFamilies', 'lutSubFamilies.lutPKID', 'tblSpecies.subFamilyID')
-            ->select(\DB::raw('tblSpecies.*, lutOrders.germanName as orderGerman, lutFamilies.germanName as familyGerman, lutFamilies.scientificName as familyScientific, lutSubFamilies.germanName as subFamilyGerman, lutSubFamilies.scientificName as subFamilyScientific, lutOrders.scientificName as orderScientific '))
+            ->select(\DB::raw('tblSpecies.*, lutOrders.germanName as orderGerman, lutFamilies.germanName as familyGerman, lutFamilies.englishName as familyEnglish, lutFamilies.scientificName as familyScientific, lutSubFamilies.germanName as subFamilyGerman, lutSubFamilies.scientificName as subFamilyScientific, lutOrders.scientificName as orderScientific '))
             ->where('tblSpecies.speciesPKID', '=', $id)          
             ->get();
     }

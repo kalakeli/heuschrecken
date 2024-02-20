@@ -68,13 +68,33 @@ class PagesController extends Controller
     }
 
     /**
+     * Hier landen Unterseiten von Projekten und werden von dort weitergeleitet.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function en_methods()
+    {
+        return view('pages.en.methodlist');
+    }
+
+    /**
      * Orthoptera.
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function orthopteraweb()
     {
-        return view('pages.orthopteraweb');
+        return view('pages.orthoptera_web');
+    }
+
+    /**
+     * Orthoptera.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function en_orthopteraweb()
+    {
+        return view('pages.en.orthoptera_web');
     }
 
     /**
@@ -86,6 +106,15 @@ class PagesController extends Controller
     {
         return view('pages.projektliste');
     }
+    /**
+     * Hier landen Unterseiten von Projekten und werden von dort weitergeleitet.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function en_projects()
+    {
+        return view('pages.en.projectlist');
+    }
 
     /**
      * Hier landen Unterseiten von Arten und werden von dort weitergeleitet.
@@ -95,6 +124,16 @@ class PagesController extends Controller
     public function species()
     {
         return view('pages.artenliste');
+    }    
+
+    /**
+     * Hier landen Unterseiten von Arten und werden von dort weitergeleitet.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function en_species()
+    {
+        return view('pages.en.specieslist');
     }    
 
     /**

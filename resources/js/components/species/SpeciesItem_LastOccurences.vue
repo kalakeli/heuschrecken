@@ -30,7 +30,7 @@
                                                 <div class="d-grid gap-2">
                                                     <button class="btn btn-sm btn-outline-dark text-start mb-2" @mouseover="highlightedItem=item" @mouseout="highlightedItem=null">
                                                         <span class="icon more"></span> |
-                                                        <span v-html="dayjs(item.date.from).locale('de').format('DD.MM.YYYY')"></span> |
+                                                        <span v-html="new Intl.DateTimeFormat('de-DE').format(new Date(item.date.from))"></span> |
                                                         MTB
                                                         <span v-html="item.locality.position.mtb.mtb"></span> |
                                                     </button>                                        
@@ -86,8 +86,8 @@
 <script>
 
   import { defineComponent } from 'vue';
-  import * as dayjs from 'dayjs'
-  import 'dayjs/locale/de' 
+//   import * as dayjs from 'dayjs'
+//   import 'dayjs/locale/de' 
 
   import { LMap, LTileLayer, LControl, LCircle, LPopup } from "@vue-leaflet/vue-leaflet";
   import "leaflet/dist/leaflet.css";
@@ -199,7 +199,8 @@
                             self.circles = response.data.occurrences.map( (item) => {
                                     return {
                                         key: item.sample.id,
-                                        description: dayjs(item.sample.date.from).locale('de').format('DD.MM.YYYY'),
+                                        description: new Intl.DateTimeFormat('de-DE').format(new Date(item.sample.date.from)),
+                                        // description: dayjs(item.sample.date.from).locale('de').format('DD.MM.YYYY'),
                                         mtb: item.sample.locality.position.mtb.mtb,
                                         color: "#dc3545",
                                         fillColor: "#dc3545",

@@ -1,7 +1,7 @@
 import './bootstrap';
 
-// window.API_URL = 'http://localhost:8000';
-window.API_URL = 'https://www.heuschrecken-monitoring.de/heuschrecken/Live';
+window.API_URL = 'http://localhost:8000';
+// window.API_URL = 'https://www.heuschrecken-monitoring.de';
 
 import * as Vue from 'vue';
 import * as VueRouter from 'vue-router';
@@ -12,16 +12,16 @@ import swal from 'sweetalert2'
 window.Swal = swal;
 const Toast = Swal.mixin({
   toast: true,
-  position: 'top',
+  position: 'center',
   showConfirmButton: false,
   timer: 3000
 });
 window.Toast = Toast;
 const PersistantToast = Swal.mixin({
   toast: true,
-  position: 'top',
+  position: 'center',
   showConfirmButton: false,
-  timer: null
+  timer: 8000
 });
 window.PersistantToast = PersistantToast;
 const CenteredToast = Swal.mixin({
@@ -38,6 +38,7 @@ window.$ = $;
 
 // ------------------------------------------------ DAYJS -------------------
 import * as dayjs from 'dayjs'
+// const dayjs = dayjs()
 
 
 // ----------------------------------- MITT (sort of eventBus in vue3) ------
@@ -53,8 +54,12 @@ import 'vue3-easy-data-table/dist/style.css';
 
 // ------------------------------------------------ COMPONENTS  -------------
 import BannerImage from './components/childcomponents/BannerImage.vue';
-import LandingProjects from './components/projects/LandingPageProjects.vue';
-import LandingOrthopteraWeb from './components/orthopteraweb/LandingPageOrthopteraWeb.vue';
+import Footer from './components/childcomponents/Footer.vue';
+import Header from './components/childcomponents/Header.vue';
+import OrthopteraWeb from './components/orthopteraweb/OrthopteraWeb.vue';
+import LandingProjects from './components/childcomponents/LandingPageProjects.vue';
+import LandingOrthopteraWeb from './components/childcomponents/LandingPageOrthopteraWeb.vue';
+import Navigation from './components/childcomponents/Navigation.vue';
 // import MobileNav from './components/childcomponents/MobileNavIcon.vue';
 
 
@@ -142,6 +147,22 @@ let routes = [
             },            
         ]
     },
+    { path: '/species', name: 'EnSpeciesStartWeb', component: () => import('./components/species/SpeciesStart.vue'), 
+        redirect: { name: 'EnSpeciesList'}, 
+        children: 
+        [
+            {
+                path: '/species',   
+                name: 'EnSpeciesList',
+                component: () => import('./components/species/SpeciesList_EN.vue')
+            },            
+            {
+                path: '/species/:url',   
+                name: 'EnSpeciesItemWeb',
+                component: () => import('./components/species/SpeciesItem_EN.vue')
+            },            
+        ]
+    },
     { path: '/methodik', name: 'MethodStartWeb', component: () => import('./components/methods/MethodsStart.vue'), 
         redirect: { name: 'MethodListWeb'}, 
         children: 
@@ -155,6 +176,38 @@ let routes = [
                 path: '/methodik/:url',   
                 name: 'MethodItemWeb',
                 component: () => import('./components/methods/MethodItem.vue')
+            },            
+        ]
+    },
+    { path: '/methods', name: 'EnMethodStartWeb', component: () => import('./components/methods/MethodsStart.vue'), 
+        redirect: { name: 'EnMethodListWeb'}, 
+        children: 
+        [
+            {
+                path: '/methods',   
+                name: 'EnMethodListWeb',
+                component: () => import('./components/methods/MethodsList_EN.vue')
+            },            
+            {
+                path: '/methods/:url',   
+                name: 'EnMethodItemWeb',
+                component: () => import('./components/methods/MethodItem_EN.vue')
+            },            
+        ]
+    },
+    { path: '/projects', name: 'EnProjectStartWeb', component: () => import('./components/projects/ProjectsStart.vue'), 
+        redirect: { name: 'EnProjectListWeb'}, 
+        children: 
+        [
+            {
+                path: '/projects',   
+                name: 'EnProjectListWeb',
+                component: () => import('./components/projects/ProjectList_EN.vue')
+            },            
+            {
+                path: '/projects/:url',   
+                name: 'EnProjectItemWeb',
+                component: () => import('./components/projects/ProjectItem_EN.vue')
             },            
         ]
     },
@@ -218,7 +271,11 @@ const app = Vue.createApp({})
 app.component( 'banner-image', BannerImage )
 app.component( 'landing-projects', LandingProjects )
 app.component( 'landing-orthoptera', LandingOrthopteraWeb )
-app.component('EasyDataTable', Vue3EasyDataTable)
+app.component( 'navigation', Navigation )
+app.component( 'EasyDataTable', Vue3EasyDataTable)
+app.component( 'vue-footer', Footer )
+app.component( 'vue-header', Header )
+app.component( 'vue-orthopteraweb', OrthopteraWeb )
 
 // Make sure to _use_ the router instance to make the
 // whole app router-aware.

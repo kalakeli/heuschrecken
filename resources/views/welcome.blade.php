@@ -1,13 +1,16 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <!-- <base href="http://localhost:8000"> -->
-    <base href="https://www.heuschrecken-monitoring.de/heuschrecken/Live">
+    <base href="http://localhost:8000">
+    <!-- <base href="https://www.heuschrecken-monitoring.de"> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />    
 
     <title>{{ config('app.name', 'Die Heuschrecken Deutschlands') }}</title>
 
@@ -24,7 +27,7 @@
     <script src="{{ asset('js/gsap.js') }}" defer></script> <!-- animation -->
     
 
-    <script src="{{ asset('js/lightbox.min.js') }}" defer></script>  
+    <script src="{{ asset('js/lightbox.min.js') }}" defer></script>
   
     <!-- Styles -->
     <style>

@@ -5,13 +5,15 @@
             <transition name="fade" class="slide-fade">
                 <div v-if="((this.imageList) && (this.imageList.length>0))">
                     <figure v-for="item in imageList" :key="item.imgPKID" class="float-start me-2 mb-2" style="max-width:250px;">
-                        <a :href="item.img_lg" data-lightbox="gallery" :data-title="`${item.imgTitle}. &copy; ${item.copyrightTitle}`">
-                        <!-- <a :href="item.img_lg" data-lightbox="gallery" :data-title="`${item.genderHTML} ${theScientificName}. &copy; ${item.copyrightTitle}`"> -->
+                        <a v-if="((item.genderHTML) && (item.genderHTML.length>0))" :href="item.img_lg" data-lightbox="img-gallery" :data-title="`${item.imgTitle} <span style='font-size:larger'>${item.genderHTML}</span> &copy; ${item.copyrightTitle}`">
+                            <img :src="item.img_sm" alt="SpeciesPicture" class="img-fluid img-thumbnail">
+                        </a>
+                        <a v-else :href="item.img_lg" data-lightbox="img-gallery" :data-title="`${item.imgTitle} &copy; ${item.copyrightTitle}`">
                             <img :src="item.img_sm" alt="SpeciesPicture" class="img-fluid img-thumbnail">
                         </a>
                         <figcaption>
-                            <span v-if="((item.genderID===10) || (item.genderID===20))" v-html="`${item.genderDesc}.`"></span>
-                            <span v-if="((item.flagHabitat===1))" v-html="`${item.imgTitle}.`"></span>
+                            <span v-if="((item.genderID===10) || (item.genderID===20))" v-html="`${item.imgTitle} <span style='font-size:larger'>${item.genderHTML}</span>`"></span>
+                            <span v-if="((item.flagHabitat===1))" v-html="`${item.imgTitle}`"></span>
                             <span v-html="`&copy; ${item.copyrightTitle}`"></span>
                         </figcaption>
                     </figure>

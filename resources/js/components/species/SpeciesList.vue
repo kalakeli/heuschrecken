@@ -14,8 +14,41 @@
                     </p>
                 </form>
             </div>
-            <div class="col-12"><hr></div>
+            <!-- <div class="col-12"><hr></div> -->
         </div>        
+        <div class="row">
+            <div class="col-12">
+                <p>Die folgende Checkliste enthält alle heimischen Heuschreckenarten. 
+                    Laut <span class="authors">Poniatowski et al.</span> (2024) sind dies 
+                    derzeit 82 Arten. Hiervon können gegenwärtig 78 Arten im Freiland 
+                    gefunden werden. Die übrigen vier Arten hatten historische Vorkommen 
+                    in Deutschland. Sie gelten mittlerweile als verschollen oder sind 
+                    schon seit über 50 Jahren ausgestorben. Ergänzt wird das Artenspektrum 
+                    der Heuschrecken (Orthoptera) durch die Europäische Gottesanbeterin 
+                    <em>Mantis religiosa</em> (Linnaeus, 1758). Sie ist die einzige 
+                    Fangschrecke (Mantodea) in Deutschland mit autochthonen Vorkommen. 
+                    Alle 83 Fang- und Heuschreckenarten erfüllen die Etablierungskriterien n
+                    ach <span class="authors">Ludwig et al.</span> (2009). Sie können 
+                    folglich als heimisch bzw. bodenständig angesehen werden. </p>
+                <h3>Literatur</h3>
+                <ul class="pubList">
+                    <li><span class="authors">Ludwig, G., Haupt, H., Gruttke, H. &amp; M. Binot-Hafke</span> 
+                    (2009): Methodik der Gefährdungsanalyse für Rote Listen. 
+                    In: <span class="authors">Haupt, H., Ludwig, G., Gruttke, H., Binot-Hafke, M., Otto, C. &amp; A. Pauly</span> 
+                    (Bearb.): Rote Liste gefährdeter Tiere, Pflanzen und Pilze Deutschlands. 
+                    Band 1: Wirbeltiere. Münster (Landwirtschaftsverlag). <em>Naturschutz und Biologische Vielfalt</em> 70: 19–71.
+</li>
+                    <li>
+                        <span class="authors">Poniatowski, D., Detzel, P., Drews, A., Hochkirch, A., Hundertmark, I., 
+                        Husemann, M., Klatt, R., Klugkist, H., Köhler, G., Kronshage, A., Maas, S., Moritz, R., Pfeifer, 
+                        M. A., Stübing, S. Voith, J., Winkler, C., Wranik, W., Helbing, F. &amp; T. Fartmann</span> (2024): 
+                        Rote Liste und Gesamtartenliste der Heuschrecken und Fangschrecken (Orthoptera et Mantodea) Deutschlands. <em>Naturschutz und Biologische Vielfalt</em> 170: 1–88.
+
+                    </li>
+                </ul>
+<hr>
+            </div>
+        </div>
         <transition name="fade" class="slide-fade">
             <div class="row" v-if="((ensiferaFamilies) && (ensiferaFamilies.length>0))">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-6 border-end">

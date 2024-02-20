@@ -164,12 +164,7 @@ return [
     */
 
     'attributes' => [
-        'author'                      => 'Autor',
-        'germanName'                  => 'Deutscher Artname',
-        'scientificName'              => 'Wissenschaftlicher Name',
-        'orderID'                     => 'Ordnung',
-        'subOrderID'                  => 'Unterordnung',
-        'familyID'                    => 'Familie',
-        'subFamilyID'                 => 'Unterfamilie',
+        'districtID'                  => 'Startgebiet',
+        'racerPKID'                   => 'Birdracer-ID',
     ]
 ];

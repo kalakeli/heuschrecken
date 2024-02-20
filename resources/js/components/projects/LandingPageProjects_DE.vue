@@ -1,30 +1,37 @@
 <template>
-    <!-- <div style="background-color:#e9ecef; box-shadow: 0 30px 30px -10px rgba(0, 0, 0, .15);" class="py-3 px-3 rounded"> -->
-    <div style="background-color:#f9f9f9;box-shadow: 0 30px 30px -10px rgba(0, 0, 0, .15);" class="py-3 px-3 rounded">
+    <div>
         <div class="row">
-            <div class="col-12">
-                <h1 class="title text-center mt-2 mb-3">OrthopteraWeb</h1>
-                <p>
-                    Werfen Sie einen Blick in die spannende Welt der Heuschrecken und ihrer Verwandten. 
-                    Mit dem Portal &bdquo;<em>OrthopteraWeb</em>&ldquo; möchten wir möglichst viele in Deutschland verfügbare Heuschreckenfunde bündeln und sichtbar machen.
-                    Hier sehen Sie die letzten Einträge. Klicken Sie einen Eintrag aus der Liste links an, um zum Fund zu gelangen. Sie müssen allerdings über ein Profil verfügen.
-                </p>
+            <div class="col-12 text-center">
+                <h1 class="title mt-2 mb-3">Projekte</h1>
             </div>
         </div>
         <transition name="fade" class="slide-fade">
-            <div class="row">
-                <div class="col-12">
-                    <occurence-list></occurence-list> 
+            <div v-if="( (projectList) && (projectList.length>0))">
+                <div v-for="item in projectList" :key="item.projectPKID">
+                    <div class="row" >
+                        <div class="col-lg-3 col-md-4 col-sm-5 col-12">
+                            <figure v-if="item.theImg_mi">
+                                <img :src="item.theImg_mi" class="img-fluid img-thumbnail" :alt="item.imgTitle">
+                            </figure>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-sm-7 col-12">
+                            <h4  v-html="`<small><small>${item.formattedDate}</small></small>&nbsp; ${item.projectTitle}`"></h4>
+                            <small class="card-text" v-html="`${item.projectTeaser}.`"></small>
+                            <p>
+                                <a :href="`/projekte/${item.projectUrl}`" class="btn btn-sm btn-custom-darkgreen"><span class="icon more"></span> mehr anzeigen</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>            
+            </div>
         </transition>  
         <div class="row">
             <div class="col-12 text-end">
                 <p class="title mt-2 mb-3">
-                    <a href="orthopteraweb">
+                    <a href="projekte">
                         <button class="btn btn-sm btn-custom-lightgreen"> &nbsp;&nbsp;
                             <span class="icon more"></span>
-                            mehr Informationen&nbsp;&nbsp;
+                            zu allen Projekten&nbsp;&nbsp;
                         </button>                        
                     </a>
                 </p>
@@ -37,12 +44,8 @@
 <script>
 
   import { defineComponent } from 'vue';
-  import * as dayjs from 'dayjs'
-  import 'dayjs/locale/de' 
-  import OccurenceList from './LastOccurences.vue'
-
   export default defineComponent({
-        name: "LandingPageOrthopteraWeb",
+        name: "LandingPageProjects",
         data() {
             return {
                 nrOfEntries: 0,
@@ -51,7 +54,7 @@
             }
         },
         components: {
-           'occurence-list': OccurenceList,
+           
         },
         methods: {
             getProjects() {
@@ -62,7 +65,7 @@
                         {
                             // self.items = response.data;
                             self.projectList = response.data.map( (item) => {
-                                item.formattedDate = dayjs(item.dateOfPublication).locale('de').format('DD.MM.YYYY')
+                                item.formattedDate = new Intl.DateTimeFormat('de-DE').format(new Date(item.dateOfPublication));
                                 return item;
                             });
                             self.nrOfEntries = response.data.length;
@@ -80,9 +83,20 @@
         },
 
         mounted() {
-            // this.getProjects();
+            this.getProjects();
         }
   });
 
 
 </script>
+<style scoped>
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.card {
+  /* flex: 1 0 auto; */
+}
+</style>

@@ -151,8 +151,7 @@
   import { defineComponent } from 'vue';
   import Form from 'vform'
   import HtmlEditor from './../../../components/childcomponents/HtmlEditor.vue'; // Tiny; https://www.tiny.cloud/docs/tinymce/
-  import * as dayjs from 'dayjs'
-  import 'dayjs/locale/de' 
+
   
   export default defineComponent({
         name: "MethodItem",
@@ -162,7 +161,7 @@
                 theAction: '',
                 theID: null,
                 form: new Form({
-                    dateOfPublication: dayjs().locale('de').format('DD.MM.YYYY'),
+                    dateOfPublication: '', // dayjs().locale('de').format('DD.MM.YYYY'),
                     flagActive: 1, 
                     methodTitle: '', 
                     methodTeaser: '', 
