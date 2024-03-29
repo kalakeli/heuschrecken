@@ -8,15 +8,17 @@
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <h1>Impressum </h1>
 
-        <h2>Herausgeber</h2>
+        <h2 class="mt-4">Herausgeber</h2>
         <h4>
-          ...
+        Prof. Dr. Thomas Fartmann
         </h4>
 
 
-        <h2>Anschrift</h2>
+        <h2 class="mt-4">Anschrift</h2>
         <p>
-         ...
+        Universität Osnabrück <br>
+Abteilung für Biodiversität und Landschaftsökologie <br>
+Barbarastraße 11,  D-49076 Osnabrück        
         </p>
         <!-- <p>
           <i class="fas fa-phone"></i>&nbsp;&nbsp;0251 - 210140 0 <br>
@@ -24,11 +26,11 @@
         </p> -->
 
 
-        <h2>Gestaltung und technische Realisierung</h2>
+        <h2 class="mt-4">Gestaltung und technische Realisierung</h2>
         <p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:karsten.berlin@gmail.com">karsten.berlin@gmail.com</a>
         </p>
 
-        <h2>Haftungsausschluss</h2>
+        <h2 class="mt-4">Haftungsausschluss</h2>
         <p>
           <small>(Quelle: <a href="https://www.e-recht24.de/muster-disclaimer.html">https://www.e-recht24.de</a>)</small>
         </p>

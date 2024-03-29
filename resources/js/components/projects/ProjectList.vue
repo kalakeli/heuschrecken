@@ -8,8 +8,10 @@
                         <div class="card-body">
                             <h4 class="card-title"  v-html="`<small><small>${item.formattedDate}</small></small>&nbsp; ${item.projectTitle}`"></h4>
                             <small class="card-text" v-html="item.projectTeaser"></small>
+                        </div>
+                        <div class="card-footer">
                             <p class="text-center mt-3 mb-0 pb-0">
-                                <router-link :to="`/projekte/${item.projectUrl}`" class="btn btn-sm btn-custom-darkgreen"><span class="icon more"></span> mehr anzeigen</router-link>
+                                <router-link :to="`/projekte/${item.projectUrl}`" class="btn btn-sm btn-custom-darkgreen text-white"><span class="icon more"></span> mehr anzeigen</router-link>
                             </p>
                         </div>
                     </div>                

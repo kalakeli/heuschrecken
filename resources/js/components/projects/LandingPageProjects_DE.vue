@@ -18,7 +18,7 @@
                             <h4  v-html="`<small><small>${item.formattedDate}</small></small>&nbsp; ${item.projectTitle}`"></h4>
                             <small class="card-text" v-html="`${item.projectTeaser}.`"></small>
                             <p>
-                                <a :href="`/projekte/${item.projectUrl}`" class="btn btn-sm btn-custom-darkgreen"><span class="icon more"></span> mehr anzeigen</a>
+                                <a :href="`/projekte/${item.projectUrl}`" class="btn btn-sm btn-custom-darkgreen text-white"><span class="icon more"></span> mehr anzeigen</a>
                             </p>
                         </div>
                     </div>

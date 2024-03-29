@@ -8,9 +8,11 @@
                         <div class="card-body">
                             <h4 class="card-title"  v-html="`${item.methodTitle}`"></h4>
                             <small class="card-text" v-html="item.methodTeaser"></small>
-                            <p class="text-center mt-3 mb-0 pb-0">
-                                <router-link :to="`/methodik/${item.methodUrl}`" class="btn btn-sm btn-custom-darkgreen"><span class="icon more"></span> mehr anzeigen</router-link>
-                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="text-center mb-0 pb-0">
+                                <router-link :to="`/methodik/${item.methodUrl}`" class="btn btn-sm btn-custom-darkgreen text-white"><span class="icon more"></span> mehr anzeigen</router-link>
+                            </p>                            
                         </div>
                     </div>                
                 </div>

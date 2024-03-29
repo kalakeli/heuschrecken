@@ -11,8 +11,10 @@
                             <small class="card-text" v-if="((item.projectTeaser_EN) && (item.projectTeaser_EN.length>0))" v-html="item.projectTeaser_EN"></small>
                             <small class="card-text" v-else v-html="item.projectTeaser"></small>
 
+                        </div>
+                        <div class="card-footer">
                             <p class="text-center mt-3 mb-0 pb-0">
-                                <router-link :to="`/projects/${item.projectUrl}`" class="btn btn-sm btn-custom-darkgreen"><span class="icon more"></span> show more</router-link>
+                                <router-link :to="`/projects/${item.projectUrl}`" class="btn btn-sm btn-custom-darkgreen text-white"><span class="icon more"></span> show more</router-link>
                             </p>
                         </div>
                     </div>                

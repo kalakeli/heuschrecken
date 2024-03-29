@@ -8,7 +8,7 @@
                     <h5>Osnabrück University</h5>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-5 col-6">
-                    <a href="./" class="nosign">
+                    <a href="images/logo_biodiversitaetsmonitoring_en_lg.jpg" data-lightbox="logo" data-title="Department of Biodiversity and Landscape Ecology, Osnabrück University"  class="nosign">
                         <img src="images/logo_biodiversitymonitoring.png" alt="Logo Biodiversitätsmonitoring" class="img-fluid header-logo mb-5">
                     </a>
                 </div>
@@ -22,7 +22,7 @@
                         <h4>Department of Biodiversity and Landscape Ecology </h4>
                         <h5>Osnabrück University</h5>
                         <br>
-                        <a href="./" class="nosign">
+                        <a href="images/logo_biodiversitaetsmonitoring_en_lg.jpg" data-lightbox="logo" data-title="Department of Biodiversity and Landscape Ecology, Osnabrück University"  class="nosign">
                             <img src="images/logo_biodiversitymonitoring.png" alt="Logo Biodiversitätsmonitoring" class="img-fluid header-logo">
                         </a>
                     </div>

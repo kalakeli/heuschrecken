@@ -55,7 +55,7 @@
                                                     </h6>
                                                     <hr>
                                                     <a :href="`https://daten.heuschrecken-portal.de/kartierliste/${item.key}`" target="_blank">
-                                                        <button class="btn btn-sm btn-custom-darkgreen">
+                                                        <button class="btn btn-sm btn-custom-darkgreen text-white">
                                                             <span class="icon more"></span>
                                                             show in portal
                                                         </button>

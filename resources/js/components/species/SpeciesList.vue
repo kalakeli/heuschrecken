@@ -1,21 +1,6 @@
 <template>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-3 col-xs-3 my-3 text-end pt-1">
-                <label for="suche">Suche: </label>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-9 col-xs-9 my-3">
-                <form>
-                    <input type="text" class="form-control" placeholder="Suche beginnt ab 3. Buchstaben" v-model="srch" />
-                    <p class="pt-2" v-if="((itemList) && (itemList.length===0))">
-                        <small class="text-danger ">
-                            Keine Art(en) entspricht dieser Angabe!
-                        </small>
-                    </p>
-                </form>
-            </div>
-            <!-- <div class="col-12"><hr></div> -->
-        </div>        
+  
         <div class="row">
             <div class="col-12">
                 <p>Die folgende Checkliste enthält alle heimischen Heuschreckenarten. 
@@ -49,9 +34,31 @@
 <hr>
             </div>
         </div>
+
+        <div class="card border-custom-green mt-4 mb-5">
+            <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-3 col-xs-3 my-3 text-end pt-1">
+                <label for="suche">Suche: </label>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-9 col-xs-9 my-3">
+                <form>
+                    <input type="text" class="form-control" placeholder="Suche beginnt ab 3. Buchstaben" v-model="srch" />
+                    <p class="pt-2" v-if="((itemList) && (itemList.length===0))">
+                        <small class="text-danger ">
+                            Keine Art(en) entspricht dieser Angabe!
+                        </small>
+                    </p>
+                </form>
+            </div>
+            <!-- <div class="col-12"><hr></div> -->
+        </div>    
+
+            </div>
+        </div>
         <transition name="fade" class="slide-fade">
             <div class="row" v-if="((ensiferaFamilies) && (ensiferaFamilies.length>0))">
-                <div class="col-lg-8 col-md-8 col-sm-12 col-6 border-end">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-6 border-end">
                     <h2 class="text-center">
                         Orthoptera - Heuschrecken
                     </h2>
@@ -65,7 +72,7 @@
 
                             <template v-if="((ensiferaFamilies) && (ensiferaFamilies.length>0))">
                                 <div v-for="item in ensiferaFamilies" :key="item.familyID">
-                                    <h4>
+                                    <h4 class="mt-4">
                                         <strong v-html="item.familyScientific"></strong>  
                                         <small v-html="`&nbsp; [${item.familyGerman}]`"></small> 
                                     </h4>
@@ -74,7 +81,7 @@
                                             <span v-html="el.subFamilyScientific"></span>
                                         </h5>
                                         <div v-for="species in itemList" :key="species.speciesPKID">
-                                            <a :href="`./artenliste/${species.germanName}`" v-if="species.subFamilyID === el.subFamilyID">
+                                            <a :href="`./artenliste/${species.germanName}`" v-if="((species.familyID === item.familyID) && (species.subFamilyID === el.subFamilyID))">
                                                 <div class="d-grid gap-2">
                                                     <button class="btn btn-outline-dark mb-2">
                                                         <em v-html="species.scientificName"></em> 
@@ -83,7 +90,7 @@
                                                     </button>
                                                 </div>
                                             </a>
-                                        </div>   <!-- Ende speciesList -->                                      
+                                        </div> <!--   Ende speciesList  -->
                                     </div>   <!-- Ende subFamilies -->                             
                                 </div>  <!-- Ende families -->      
                             </template>
@@ -107,7 +114,7 @@
                                             <span v-html="el.subFamilyScientific"></span>
                                         </h5>
                                         <div v-for="species in itemList" :key="species.speciesPKID">
-                                            <a :href="`./artenliste/${species.germanName}`" v-if="species.subFamilyID === el.subFamilyID">
+                                            <a :href="`./artenliste/${species.germanName}`" v-if="((species.familyID === item.familyID) && (species.subFamilyID === el.subFamilyID))">
                                                 <div class="d-grid gap-2">
                                                     <button class="btn btn-outline-dark mb-2">
                                                         <em v-html="species.scientificName"></em> 
@@ -116,23 +123,23 @@
                                                     </button>
                                                 </div>
                                             </a>
-                                        </div>   <!-- Ende speciesList -->                                       
+                                        </div>  <!--  Ende speciesList   -->
                                     </div>   <!-- Ende subFamilies -->                             
                                 </div>  <!-- Ende families -->      
                             </template>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-6">
-                    <h2 class="text-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-6">
+                    <h2 class="text-center mt-4">
                         Mantodea - Fangschrecken
                     </h2>
                     <!-- Unterordnungen -->
                     <div class="row">
-                        <div class="col-12">
-                            <h3 class="my-4">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <!-- <h3 class="my-4">
                                 &nbsp;
-                            </h3>
+                            </h3> -->
                                 
                             <template v-if="((mantidaFamilies) && (mantidaFamilies.length>0))">
                                 <div v-for="item in mantidaFamilies" :key="item.familyID">
@@ -164,11 +171,28 @@
                 </div>
             </div>
         </transition>
+
+
     </div>
 </template>
 
 
 <script>
+function dynamicSort(property) {
+    var sortOrder = 1;
+    if(property[0] === "-") {
+        sortOrder = -1;
+        property = property.substr(1);
+    }
+    return function (a,b) {
+        /* next line works with strings and numbers, 
+         * and you may want to customize it to your needs
+         */
+        var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
+        return result * sortOrder;
+    }
+}
+
   import { defineComponent } from 'vue';
 
 
@@ -192,7 +216,7 @@
             {
                 if (this.srch.length>=3) 
                 {
-                    return this.speciesList.filter( (item) => {
+                    let theList = this.speciesList.filter( (item) => {
                          let searchStr = this.srch.toLowerCase();
                          if ((item.germanName.toLowerCase().indexOf(searchStr)!==-1) || 
                              (item.scientificName.toLowerCase().indexOf(searchStr)!==-1) )
@@ -200,6 +224,14 @@
                             return item;
                          }
                     });
+                    if (theList.length>1) 
+                    {
+                        return theList
+                    }
+                    else if (theList.length === 1) 
+                    {
+                        location.href += "/" + theList[0].scientificName;
+                    }
                 } 
                 else 
                 {
@@ -229,6 +261,7 @@
                         }
                     }
                 })
+                theItems.sort(dynamicSort("familyScientific"));
                 return theItems;
             }
         },
@@ -255,6 +288,7 @@
                         }
                     }
                 })
+                theItems.sort(dynamicSort("subFamilyScientific"));
                 return theItems;
             }
         },        
@@ -279,7 +313,8 @@
                             theFamilies.push(item.familyID)
                         }
                     }
-                })
+                })             
+                theItems.sort(dynamicSort("familyScientific"));
                 return theItems;
             }
         },
@@ -306,6 +341,7 @@
                         }
                     }
                 })
+                theItems.sort(dynamicSort("subFamilyScientific"));
                 return theItems;
             }
         },
@@ -390,10 +426,10 @@
       },
 
       // click in table
-      showSpecies(item) {
-          console.log("ZEILE angeklickt ... " );
-          console.log(item);
-      }       
+    //   showSpecies(item) {
+        //   console.log("ZEILE angeklickt ... " );
+        //   console.log(item);
+    //   }       
 
     }, 
     mounted() {

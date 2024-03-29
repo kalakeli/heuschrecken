@@ -12,7 +12,7 @@
               </h2>
               <a :href="`species/${theScientificName}`">
                   <div class="d-grid gap-2 img-btn px-2">
-                        <button class="btn btn-sm btn-custom-darkgreen">last occurrences</button>
+                        <button class="btn btn-sm btn-custom-darkgreen text-white">last occurrences</button>
                   </div> 
               </a>
             </div>

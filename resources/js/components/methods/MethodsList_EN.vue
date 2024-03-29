@@ -10,8 +10,10 @@
                             <h4 class="card-title" v-else v-html="`${item.methodTitle}`"></h4>
                             <small class="card-text" v-if="((item.methodTeaser_EN) && (item.methodTeaser_EN.length>0))" v-html="item.methodTeaser_EN"></small>
                             <small class="card-text" v-else v-html="item.methodTeaser"></small>
+                        </div>
+                        <div class="card-footer">
                             <p class="text-center mt-3 mb-0 pb-0">
-                                <router-link :to="`/methods/${item.methodUrl}`" class="btn btn-sm btn-custom-darkgreen"><span class="icon more"></span> show more</router-link>
+                                <router-link :to="`/methods/${item.methodUrl}`" class="btn btn-sm btn-custom-darkgreen text-white"><span class="icon more"></span> show more</router-link>
                             </p>
                         </div>
                     </div>                

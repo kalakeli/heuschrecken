@@ -3,15 +3,15 @@
 @section('title', 'species list')
 
 @section('content')
-<div class="container-fluid">
+<div class="container">
       <div class="row">
           <div class="col-12">
               <h1 class="headline">
                 Check list 
                 <sup>
-                  <a href="./artenliste" class="hint--bottom hint--rounded" data-hint="gesamte Artenliste anzeigen">
+                  <a href="./species" class="hint--bottom hint--rounded" data-hint="gesamte Artenliste anzeigen">
                     <button type="button" class="btn btn-sm btn-light">
-                          <i class="fa-solid fa-rotate"></i>
+                          <span class="icon list"></span>
                     </button>                      
                   </a>                
                 </sup>

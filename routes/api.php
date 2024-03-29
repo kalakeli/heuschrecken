@@ -57,6 +57,7 @@ Route::get('/orthoptera/occurences/last/{nr}', [App\Http\Controllers\SpeciesCont
 
 // SPECIES
 Route::get('/species', [App\Http\Controllers\SpeciesController::class, 'index']);
+Route::get('/species/by/family/{id}', [App\Http\Controllers\SpeciesController::class, 'showByFamily']);
 Route::get('/species/by/id/{id}', [App\Http\Controllers\SpeciesController::class, 'show']);
 Route::get('/species/by/url/{url}', [App\Http\Controllers\SpeciesController::class, 'getSpeciesByURL']);
 Route::get('/species/{id}/images', [App\Http\Controllers\ImageController::class, 'getSpeciesImages']);

@@ -7,7 +7,7 @@
                 <p>
                     Werfen Sie einen Blick in die spannende Welt der Heuschrecken und ihrer Verwandten. 
                     Mit dem Portal &bdquo;<em>OrthopteraWeb</em>&ldquo; möchten wir möglichst viele in Deutschland verfügbare Heuschreckenfunde bündeln und sichtbar machen.
-                    Hier sehen Sie die letzten Einträge. Klicken Sie einen Eintrag aus der Liste links an, um zum Fund zu gelangen. Sie müssen allerdings über ein Profil verfügen.
+                    Hier sehen Sie die letzten Einträge. Klicken Sie einen Eintrag aus der Liste links an, um zum Fund zu gelangen.
                 </p>
             </div>
         </div>

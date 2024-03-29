@@ -21,7 +21,35 @@
     //          url(./../../images/species/pseudochorthippus_parallelus_dponiatowski.jpg)
     //          url(./../../images/species/ruspolia_nitidula_dponiatowski.jpg) ;
  }
-
+/* -------------------------------------------------------------------
+   preload einiges speicherintensiver Bilder
+   Technik ist so simpel wie effektiv, die Bilder werden an das 
+   content-Attribut von body gehängt und im Hintergrund geladen   
+   ------------------------------------------------------------------- */
+   body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
+    content: url(https://www.heuschrecken-monitoring.de/images/species/mecostethus_parapleurus_m_dponiatowski_2.jpg)
+             url(https://www.heuschrecken-monitoring.de/images/species/psophus_stridulus_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/stethophyma_grossum_w_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/decticus_verrucivorus_w_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/podisma_pedrestris_w_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/miramella_alpina_w_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/stauroderus_scalaris_w_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/oedipoda_caerulescens_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/pseudochorthippus_montanus_w_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/mecostethus_parapleurus_m_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/podisma_pedestris_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/tetrix_bipunctata_w_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/pseudochorthippus_parallelus_w_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/stenobothrus_crassipes_w_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/chorthippus_dorsatus_m_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/omocestus_haemorrhoidalis_w_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/gomphocerippus_rufus_w_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/chrysochraon_dispar_m_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/ruspolia_nitidula_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/pseudochorthippus_parallelus_dponiatowski_2.jpg)  
+             url(https://www.heuschrecken-monitoring.de/images/species/calliptamus_italicus_m_dponiatowski_2.jpg)  ;
+ }
 
 /* ------- beginn my styles-------- */  
 body, html {
@@ -53,11 +81,11 @@ h3 {
   font-weight: 400;
   padding-bottom: .6rem;
   border-bottom: 1px solid #414142;
-
 }
 
 a {
   text-decoration: none;
+  color: rgba(81,146,176,1);
 }
 .active-item {
   background-color: $custom-green !important;
@@ -201,7 +229,16 @@ footer {
 /* -------------------------------------------------------------------
     Listen
     ------------------------------------------------------------------- */
-    ul.pubList, ul.checkedList {
+  // ul {
+  //   margin-left:0 !important;
+  // }
+  ul.pubList {
+    list-style-type: none;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    // margin-left: 25px;
+  }
+  ul.checkedList {
     list-style-type: none;
     margin-left: 25px;
   }
@@ -451,6 +488,15 @@ input::placeholder {
   max-height: 600px;
   overflow: scroll;
 }
+
+/* -------------------------------------------------------------------
+ OVERRIDE BOOTSTRAP 
+------------------------------------------------------------------- */
+.card-footer {
+  background-color: inherit !important;
+  border-top: none !important;
+}
+
 
  // Variables
  @import 'responsive';  

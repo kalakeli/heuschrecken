@@ -11,7 +11,7 @@
                 <sup>
                   <a href="./projekte" class="hint--bottom hint--rounded" data-hint="gesamte Projektliste anzeigen">
                     <button type="button" class="btn btn-sm btn-light">
-                          <i class="fa-solid fa-rotate"></i>
+                          <span class="icon list"></span>
                     </button>                      
                   </a>                
                 </sup>

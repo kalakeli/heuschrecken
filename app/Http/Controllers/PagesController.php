@@ -54,7 +54,7 @@ class PagesController extends Controller
      */
     public function dsgvo()
     {
-        return view('pages.datenscbutt');
+        return view('pages.datenschutz');
     }
 
     /**

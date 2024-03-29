@@ -16,207 +16,132 @@
         gewährleisten, dass sie vertraulich bleiben und geschützt sind.</p>
         <p>Naturgemäß sind solche Texte etwas dröge, aber nicht minder wichtig.</p>
 
-        <h2>I. Wer ist verantwortlich und wie kann ich den Datenschutzbeauftragten erreichen?</h2>
-        <p>Der Verantwortliche im Sinne der DSGVO ist ... </p>
-        <!-- <p><strong>Dachverband Deutscher Avifaunisten e.V.</strong> <br>
-           An den Speichern 6, D-48157 Münster</p>
-        <p>Vereinsregister:  Münster, Nr. 5174, <br>USt-ID-Nr.: DE263129470 </p>
-        <p>Der DDA wird vertreten durch </p>
-        <ul class="ddaList">
-          <li>den Vorsitzenden Dr. Christoph Sudfeldt</li>
-          <li>den stellvertrenden Vorsitzenden Dr. Johannes Wahl und Dr. Jakob Katzenberger</li>
-        </ul> -->
-        <h4>Sie haben Fragen zum Datenschutz?</h4>
+        <h2 class="mt-4">I. Wer ist verantwortlich und wie kann ich den Datenschutzbeauftragten erreichen?</h2>
+        <p>Verantwortlich im Sinne der DSGVO ist ... </p>
+
+        <p><strong>Prof. Dr. Thomas Fartmann</strong>, <br>
+          Abteilung für Biodiversität und Landschaftsökologie  <br>
+          Universität Osnabrück, Barbarastraße 11,  D-49076 Osnabrück        
+        </p>
+        </p>
+        Die Universität Osnabrück wird gesetzlich vertreten durch ihre Präsidentin
+        Prof. Dr. Susanne Menzel-Riedl. </p>
+        <h4><strong>Sie haben Fragen zum Datenschutz?</strong></h4>
         <p>Schicken Sie uns gerne eine E-Mail an
-          ...
+          <a href="mailto:datenschutz@heuschrecken-monitoring.de">datenschutz@heuschrecken-monitoring.de</a>.
         </p>
 
+    
 
-        <h2>II. Ihre Rechte als Betroffene*r</h2>
+        <h2 class="mt-4">II. Ihre Rechte als Betroffene*r</h2>
         <p>Sie haben jederzeit folgende Rechte: </p>
-        <ul class="ddaList">
+        <ul class="pubList">
           <li>Recht auf Auskunft (<a href="http://dsgvo-gesetz.de/art-15-dsgvo/" target="_blank">Art. 15 DSGVO</a>)</li>
           <li>Recht auf Berichtigung von unrichtigen Daten (<a href="http://dsgvo-gesetz.de/art-16-dsgvo/" target="_blank">Art. 16 DSGVO</a>)</li>
           <li>Recht auf Löschung bzw. ein Recht auf &bdquo;Vergessenwerden&ldquo; (<a href="http://dsgvo-gesetz.de/art-17-dsgvo/" target="_blank">Art. 17 DSGVO</a>)</li>
           <li>Recht auf Einschränkung der Verarbeitung personenbezogener Daten (<a href="http://dsgvo-gesetz.de/art-18-dsgvo/" target="_blank">Art. 18 DSGVO</a>)</li>
           <li>Recht auf Datenübertragbarkeit (<a href="http://dsgvo-gesetz.de/art-20-dsgvo/" target="_blank">Art. 20 DSGVO</a>)</li>
         </ul>
-        <p>Ihnen steht als betroffener Person jederzeit ein allgemeines
-          Widerspruchsrecht zu (<a href="http://dsgvo-gesetz.de/art-21-dsgvo/" target="_blank">Art. 21 DSGVO</a>).
-          Der Verarbeitung von personenbezogenen Daten für Zwecke der Werbung
-          einschließlich einer Analyse von Kundendaten für Werbezwecke können Sie
-          jederzeit ohne Angabe von Gründen widersprechen. Ansonsten ist der
-          Widerspruch gegen eine Datenverarbeitung zu begründen. Sofern die
-          Datenverarbeitung auf Grundlage einer Einwilligung erfolgt, kann Ihre
-          Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen werden. </p>
-        <p>Sie haben das Recht zur Beschwerde bei der für Sie zuständigen
-          Datenschutzaufsichtsbehörde, aber einfacher ist es, sich mit uns über die
-          im Impressum angegebenen Kontaktdaten in Verbindung zu setzen.</p>
 
+<p>Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.</p>
+<p>Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde.</p>
+<p>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" target="_blank" rel="nofollow noopener">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
+<h2 class="mt-4">Erfassung allgemeiner Informationen beim Besuch unserer Website</h2>
+<h4>
+  <strong>Art und Zweck der Verarbeitung</strong>
+</h4>
+<p>Wenn Sie auf unsere Website zugreifen, d.h., wenn Sie sich nicht registrieren oder anderweitig Informationen übermitteln, werden automatisch Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) beinhalten etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet-Service-Providers, Ihre IP-Adresse und Ähnliches. Hierbei handelt es sich ausschließlich um Informationen, welche keine Rückschlüsse auf Ihre Person zulassen.</p>
+<p>Sie werden insbesondere zu folgenden Zwecken verarbeitet</p>
+<ul class="pubList">
+<li>Sicherstellung eines problemlosen Verbindungsaufbaus der Website,</li>
+<li>Sicherstellung einer reibungslosen Nutzung unserer Website,</li>
+<li>Auswertung der Systemsicherheit und -stabilität sowie</li>
+<li>zu weiteren administrativen Zwecken.</li>
+</ul>
+<p>Informationen dieser Art werden von uns ggfs. statistisch ausgewertet, um unseren Internetauftritt und die dahinterstehende Technik zu optimieren.</p>
+<h4><strong>Rechtsgrundlage</strong></h4>
+<p>Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an der Verbesserung der Stabilität und Funktionalität unserer Website.</p>
+<h4><strong>Empfänger</strong></h4>
+<p>Empfänger der Daten sind ggf. technische Dienstleister, die für den Betrieb und die Wartung unserer Webseite als Auftragsverarbeiter tätig werden.</p>
+<h4><strong>Speicherdauer</strong></h4>
+<p>Die Daten werden gelöscht, sobald diese für den Zweck der Erhebung nicht mehr erforderlich sind. Dies ist für die Daten, die der Bereitstellung der Webseite dienen, grundsätzlich der Fall, wenn die jeweilige Sitzung beendet ist.</p>
+<h4><strong>Bereitstellung vorgeschrieben oder erforderlich</strong></h4>
+<p>Die Bereitstellung der vorgenannten personenbezogenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Ohne die IP-Adresse ist jedoch der Dienst und die Funktionsfähigkeit unserer Website nicht gewährleistet. Zudem können einzelne Dienste und Services nicht verfügbar oder eingeschränkt sein. Aus diesem Grund ist ein Widerspruch ausgeschlossen. </p>
 
-        <h2>III. Verarbeitung personenbezogener Daten </h2>
-        <p>Nachfolgend geben wir Ihnen einen Überblick, wie wir den Schutz Ihrer
-          personenbezogenen Daten bei Zugriff auf unsere Website gewährleisten
-          und welche Arten von personenbezogenen Daten wir zu welchen Zwecken und
-          in welchem Umfang verarbeiten.</p>
+<h2 class="mt-4">Cookies</h2>
+<h4>
+  <strong>Art und Zweck der Verarbeitung</strong>
+</h4>
+<p>Wie viele andere Webseiten verwenden wir auch sogenannte „Cookies“. Cookies sind kleine Textdateien, die von einem Webserver auf Ihre Festplatte übertragen werden. Hierdurch erhalten wir automatisch bestimmte Daten wie z. B. IP-Adresse, verwendeter Browser, Betriebssystem und Ihre Verbindung zum Internet.</p>
+<p>Cookies können nicht verwendet werden, um Programme zu starten oder Viren auf einen Computer zu übertragen. Anhand der in Cookies enthaltenen Informationen können wir Ihnen die Navigation erleichtern und die korrekte Anzeige unserer Webseiten ermöglichen.</p>
+<p>In keinem Fall werden von uns erfasste Daten an Dritte weitergegeben oder ohne Ihre Einwilligung eine Verknüpfung mit personenbezogenen Daten hergestellt.</p>
+<p>Natürlich können Sie unsere Website grundsätzlich auch ohne Cookies betrachten. Internet-Browser sind regelmäßig so eingestellt, dass sie Cookies akzeptieren. 
+  Im Allgemeinen können Sie die Verwendung von Cookies jederzeit über die Einstellungen Ihres Browsers deaktivieren. 
+  Bitte verwenden Sie die Hilfefunktionen Ihres Internetbrowsers, um zu erfahren, wie Sie diese Einstellungen ändern können. 
+  Bitte beachten Sie, dass einzelne Funktionen unserer Website möglicherweise nicht funktionieren, wenn Sie die Verwendung von Cookies deaktiviert haben.</p>
+<h4><strong>Speicherdauer und eingesetzte Cookies</strong></h4>
+<p>Soweit Sie uns durch Ihre Browsereinstellungen oder Zustimmung die Verwendung von Cookies erlauben, können folgende Cookies auf unseren Webseiten zum Einsatz kommen:</p>
+<ul class="pubList">
+  <li>
+    <strong>Session-Cookies</strong>: Diese werden nur für die Dauer des Webseitenbesuchs gespeichert und sichern zugunsten schnellerer Ladezeiten in Ihrem Browser Informationen wie Artenlisten oder aufgerufene Art.
+  </li>
+</ul>
+<p>Soweit Cookies (auch) personenbezogene Daten betreffen können, informieren wir Sie darüber in den folgenden Abschnitten.</p>
+<p>Sie können über Ihre Browsereinstellungen einzelne Cookies oder den gesamten Cookie-Bestand löschen. Darüber hinaus erhalten Sie Informationen und Anleitungen, wie diese Cookies gelöscht oder deren Speicherung vorab blockiert werden können. Je nach Anbieter Ihres Browsers finden Sie die notwendigen Informationen unter den nachfolgenden Links:</p>
+<ul>
+<li>Mozilla Firefox: <a href="https://support.mozilla.org/de/kb/cookies-loeschen-daten-von-websites-entfernen" target="_blank" rel="nofollow noopener">https://support.mozilla.org/de/kb/cookies-loeschen-daten-von-websites-entfernen</a></li>
+<li>Internet Explorer: <a href="https://support.microsoft.com/de-de/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank" rel="nofollow noopener">https://support.microsoft.com/de-de/help/17442/windows-internet-explorer-delete-manage-cookies</a></li>
+<li>Google Chrome: <a href="https://support.google.com/accounts/answer/61416?hl=de" target="_blank" rel="nofollow noopener">https://support.google.com/accounts/answer/61416?hl=de</a></li>
+<li>Opera: <a href="http://www.opera.com/de/help" target="_blank" rel="nofollow noopener">http://www.opera.com/de/help</a></li>
+</ul>
 
-        <h3>Verarbeitung von Daten bei Zugriff auf unserer Website</h3>
-        <p>Die Webseiten sind auch nutzbar, ohne Cookies akzeptieren zu müssen
-          und ohne angemeldet zu sein. Dennoch speichert der Webserver allgemeine
-          Zugriffsdaten in Form sogenannter Log-Files.
-          Das sind Daten etwa wie die Art des Webbrowsers, das verwendete
-          Betriebssystem, den Domainnamen Ihres Internet Service Providers, die
-          IP-Adresse, von der aus Sie die Webseiten aufrufen und
-          Ähnliches. Diese Daten werden bei Nutzung des Internets stets übertragen
-          und es sind Informationen,
-          die technisch notwendig sind, um Inhalte korrekt laden zu können. </p>
-        <p>Die anfallenden Logfile-Daten werden von uns über einen Zeitraum von
-          drei Monaten gespeichert, um etwaige Angriffe gegen unsere Website erkennen
-          und analysieren zu können. Rechtsgrundlage für die Speicherung
-          <a href="http://dsgvo-gesetz.de/art-6-dsgvo/" target="_blank">Art. 6 DSGVO</a>.</p>
+<h2 class="mt-4">Verwendung von externen Diensten - Google Webfonts</h2>
+<h4>
+  <strong>Art und Zweck der Verarbeitung</strong>
+</h4>
+<p>Um Inhalte browserübergreifend korrekt und grafisch ansprechend darzustellen, werden häufig „Google Web Fonts“ der Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA; nachfolgend „Google“) zur Darstellung von Schriften verwendet.</p>
+<p>Die Datenschutzrichtlinie des Bibliothekbetreibers Google finden Sie hier: <a href="https://www.google.com/policies/privacy/">https://www.google.com/policies/privacy/</a></p>
+<h4><strong>Speicherdauer und eingesetzte Cookies</strong></h4>
+<p>Diese Webseite nutzt externe Fonts nur in der Form, dass sie als serverseitig gespeicherte Schriftvorlagen eingebettet werden. Es werden keine Fonts von Google genutzt, so dass keine automatisch erfasste Informationen weitergegeben werden.</p>
 
-        <h3>Gewährleistung der Datensicherheit</h3>
-        <p>Wir treffen technische und betriebliche Sicherheitsvorkehrungen, um
-          bei uns gespeicherte personenbezogenen Daten vor einem Zugriff durch Dritte,
-          einem Verlust oder Missbrauch zu schützen und einen gesicherten Datentransfer zu ermöglichen.</p>
-        <p>Alle Online-Formulare werden über eine sichere SSL-Verbindung
-          aufgerufen und Ihre Daten darüber übermittelt. Sie erkennen dies an
-          einem geschlossenen Schloss in der Statusleiste Ihres Browsers. Ihre
-          Daten sind auf dem Weg von Ihrem Rechner zu uns verschlüsselt.
-          Wir benutzen ein Sicherheitszertifikat der Firma Let's Encrypt für die
-          Verschlüsselung unseres Angebotes. </p>
+<h2 class="mt-4">Verwendung von externen Diensten - Google Maps bzw. andere Kartendienste</h2>
+<h4>
+  <strong>Art und Zweck der Verarbeitung</strong>
+</h4>
+<p>Um Inhalte browserübergreifend korrekt und grafisch ansprechend darzustellen, werden häufig Kartendienste wie Google Maps oder OpenStreetMap eingebunden. 
+Google Maps wird direkt von Servern der Firma Google abgerufen, so dass das Unternehmen die Ihnen aktuell zugewiesene IP-Adresse erhält. 
+Durch den Besuch auf der Webseite erhält Google die Information, dass Sie die entsprechende Unterseite unserer Webseite aufgerufen haben.
+ Ob und in welchem Umfang bzw. über welchen Zeitraum die IP-Adresse von Google gespeichert und genutzt wird, entzieht sich unserer Kenntnis. 
+ Rechtsgrundlage für die Einbindung dieses Dienstes ist die Aufwertung unseres Internetangebotes im Sinne des Art. 6 Abs. 1 S. 1 lit. f DSGVO.
+</p>
+<h4><strong>Speicherdauer und eingesetzte Cookies</strong></h4>
+<p>Diese Webseite verwendet aktuell keine Kartendienste.</p>
 
-        <h3>Gewährleistung der Datensicherheit auf Ihrer Seite</h3>
-        <p>Wir möchten Sie darauf hinweisen, dass es aufgrund der Struktur des
-          Internets zu einem ungewollten Zugriff durch Dritte kommen kann.
-          Es liegt daher auch in Ihrem Verantwortungsbereich, Ihre Daten durch
-          Verschlüsselung, durch Einsatz eines VPN oder in sonstiger Weise gegen
-          Missbrauch zu schützen. Ohne entsprechende Schutzmaßnahmen können
-          insbesondere unverschlüsselt übertragene Daten von Dritten mitgelesen werden.
-          Dies betrifft auch E-Mails.
-        </p>
+<h2 class="mt-4">Verwendung von externen Diensten - YouTube</h2>
+<h4>
+  <strong>Art und Zweck der Verarbeitung</strong>
+</h4>
+<p>Um Inhalte ansprechend darzustellen, werden häufig neben textlichen Inhalten auch Videos eingebettet. 
+ Rechtsgrundlage für die Einbindung dieses Dienstes ist die Aufwertung unseres Internetangebotes im Sinne des Art. 6 Abs. 1 S. 1 lit. f DSGVO.
+</p>
+<p>Diese Webseite nutzt die Youtube-Einbettungsfunktion zur Anzeige und Wiedergabe von Videos von Youtube. 
+  Wir verwenden den erweiterten Datenschutzmodus, der nach Anbieterangaben eine Speicherung von Nutzerinformationen 
+  erst bei Wiedergabe des Videos in Gang setzt. In dem Augenblick, wo die Wiedergabe des eingebetteten Videos gestartet wird, 
+  setzt der Youtube Cookies ein, um Informationen über das Nutzerverhalten zu sammeln.
+  </p>
+<p>
+Hinweisen von Youtube zufolge dienen diese unter anderem dazu, Videostatistiken zu erfassen, die Nutzerfreundlichkeit zu verbessern und missbräuchliche Handlungsweisen zu unterbinden.
+</p>
+<p>
+Unabhängig von einer Wiedergabe der eingebetteten Videos wird bei jedem Aufruf dieser Webseite eine Verbindung zum Google-Netzwerk “DoubleClick” aufgenommen, was ohne unseren Einfluss weitere Datenverarbeitungsvorgänge auslösen kann.
+</p>
+<p>
+Weitere Informationen zum Datenschutz bei YouTube finden Sie in der Datenschutzerklärung des Anbieters unter: <a href="https://www.google.de/intl/de/policies/privacy/" target="_blank">https://www.google.de/intl/de/policies/privacy/</a>.</p>
 
-
-        <h2>IV. Einbindung von Angeboten fremder Dienste </h2>
-        <p>Unsere Webseiten verwenden einige Angebote fremder Dienste, um Ihnen
-        die Interaktion zu erleichtern und uns eine Möglichkeit zu bieten, unseren
-        Webauftritt zu verbessern. Nachfolgend erhalten Sie einen Überblick über
-        die eingesetzten fremden Angebote.</p>
-
-        <h3>Einbindung von Google Fonts</h3>
-        <p>
-          Diese Webseite setzt keine über die Google Fonts API eingebundenen Schriften ein.
-          Alle Schriften, die nicht dem Standard entsprechen, werden direkt von 
-          unserem Server eingebunden. 
-        </p>
-
-        <!-- <h3>Einbindung von Social-Plugins</h3> -->
-        <!-- <p class="alert alert-warning">fehlt</p> -->
-        <h3>Einbindung von Google Maps</h3>
-        <p>Auf dieser Website nutzen wir das Angebot von Google Maps der Firma Google, Inc.
-          mit dem Zweck, Ihnen interaktive Karten direkt in der Webseite anzeigen
-          zu können, um eingebundene Kartenfunktionen komfortabel nutzen zu können.
-        </p>
-        <p>Diese Anwendung wird direkt von Servern der Firma Google abgerufen, so
-          dass das Unternehmen die Ihnen aktuell zugewiesene IP-Adresse erhält.
-          Durch den Besuch auf der Webseite erhält Google die Information, dass
-          Sie die entsprechende Unterseite unserer Webseite aufgerufen haben. Ob
-          und in welchem Umfang bzw. über welchen Zeitraum die IP-Adresse von
-          Google gespeichert und genutzt wird, entzieht sich unserer Kenntnis.
-          Rechtsgrundlage für die Einbindung dieses Dienstes ist die Aufwertung
-          unseres Internetangebotes im Sinne des Art. 6 Abs. 1 S. 1 lit. f DSGVO. </p>
-        <p>Sofern Sie bei einem Dienst von Google registriert sind, kann Google
-          den Besuch Ihrem Account zuordnen. Selbst, wenn Sie nicht bei Google
-          registriert sind bzw. sich nicht eingeloggt haben, besteht die Möglichkeit,
-          dass Google Ihre IP-Adresse speichert und für die Profilbildung nutzt.
-          Google speichert die über Sie erhobenen Daten als Nutzungsprofile und
-          nutzt diese für Zwecke der Werbung, Marktforschung und/oder bedarfsgerechten
-          Gestaltung ihrer Webseiten. Eine solche Auswertung erfolgt insbesondere
-          (auch für nicht eingeloggte Nutzer) zur Darstellung von bedarfsgerechter
-          Werbung und um andere Nutzer des sozialen Netzwerks über Ihre Aktivitäten
-          auf unseren Webseiten zu informieren. Ihnen steht ein Widerspruchsrecht
-          gegen die Bildung dieser Nutzerprofile bei Google zu.</p>
-        <p>Wir weisen Sie darauf hin, dass eine Datenverarbeitung durch Google
-          auch außerhalb Europas erfolgen kann, bspw. verarbeitet Google
-          personenbezogene Daten auch in den USA. Google hat sich dem
-          <a href="https://www.privacyshield.gov/EU-US-Framework" target="_blank">
-            EU-US Privacy Shield
-          </a>
-          unterworfen. Google bietet ausführliche
-         <a href="https://policies.google.com/privacy?hl=de&gl=de" target="_blank">
-           Informationen zum Datenschutz bei Google
-         </a> an.</p>
-
-        <h3>Einbindung von OpenStreetMap</h3>
-        <p>Neben dem Einsatz von Google Maps setzen wir ebenso zur Aufwertung unseres Online-Angebots
-        im Sinne von Art. 6 Abs. 1 S. 1 lit. f DSGVO auch interaktive Karten ein,
-        die durch <a href="https://www.openstreetmap.de/" target="_blank">OpenStreetMap</a>
-        zur Verfügung gestellt werden. Unsere Programmierungen in den Karten
-        erfolgen mit Hilfe der Javascript-Bibliothek
-        <a href="https://leafletjs.com/" target="_blank">Leaflet</a>.
-        Für die korrekte Darstellung ist es aus technischer Sicht notwendig, Anfragen
-        an andere Server zu stellen. Durch diese Anfragen wäre es grundsätzlich
-        möglich, dass Informationen über Ihre Benutzung dieser Website an andere
-        Server übertragen und dort gespeichert werden. Die anderen Server sind
-        maps.wikimedia.org (Kartenlayer) und unpkg.com (Leaflet-Dateien).
-      </p>
-      <p>Sie haben die Möglichkeit, den Service von OpenStreetMap zu deaktivieren
-        und somit den Datentransfer an Dritte zu verhindern, indem Sie JavaScript
-        in Ihrem Browser deaktivieren. Wir möchten jedoch darauf hinweisen, dass
-        Sie in diesem Fall die Kartenanzeige auf unseren Seiten nicht oder nur
-        eingeschränkt nutzen können.
-        </p>
-        <!-- <h3>Einbindung von YouTube</h3>
-        <p class="alert alert-warning">fehlt</p> -->
-
-      <h2>V. Unser Umgang mit Cookies</h2>
-      <p>Unsere Website verwendet sogenannte Cookies. Cookies sind kleine Textdateien,
-        die auf Ihrem Endgerät abgelegt und in Ihrem Browser gespeichert werden. Sie
-        dienen dazu, unsere Angebote nutzerfreundlicher, effektiver und sicherer
-        zu machen. Wir verwenden neben temporären Cookies, die mit dem Schließen
-        Ihres Browsers automatisch gelöscht werden (&bdquo;Session Cookies&ldquo;)
-        auch persistente Cookies, die zu einem im Cookie festgelegten Zeitraum
-        gelöscht werden. </p>
-      <p>Sie können selber entscheiden, ob Sie das Setzen von Cookies zulassen möchten.
-        Änderungen können Sie in Ihren Browsereinstellungen vornehmen. Zum Beispiel
-        (falls die Links nicht mehr aktuell sind, lassen Sie es uns bitte wissen):
-      </p>
-      <ul class="ddaList">
-        <li><a href="https://support.google.com/accounts/answer/61416?co=GENIE.Platform%3DDesktop&hl=de&oco=1" target="_blank">Cookies in Chrome verwalten</a> </li>
-        <li><a href="https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen" target="_blank">Cookies in Firefox verwalten</a> </li>
-        <li><a href="http://techmixx.de/microsoft-edge-cookies-aktivieren-oder-deaktivieren/" target="_blank">Cookies in Microsoft Edge verwalten</a> </li>
-        <li><a href="https://help.opera.com/de/latest/web-preferences/" target="_blank">Webpräferenzen und Cookies in Opera verwalten</a> </li>
-        <li><a href="https://support.apple.com/de-de/guide/safari/sfri11471/mac" target="_blank">Cookies in Safari verwalten</a> </li>
-      </ul>
-      <p>Sie haben grundsätzlich die Wahl, ob Sie alle Cookies akzeptieren, beim
-        Setzen von Cookies informiert werden oder alle Cookies ablehnen wollen.
-        Lehnen Sie alle Cookies ab, ist es möglich, dass Sie unser Angebot nicht
-        vollständig nutzen können. </p>
-      <p>Wir unterscheiden beim DDA zwischen zwei Kategorien von Cookies, den für
-      die Nutzung zwingend erforderlichen und den Cookies, die weitergehende
-      Zwecke erfüllen.</p>
-
-      <h3>Zwingend erforderliche Cookies</h3>
-      <p>Zwingend erforderlich für die Nutzung unserer Seiten sind die sogenannten
-      Session-Cookies. Sie werden gelöscht, wenn Sie den Browser schließen. Sie
-      helfen uns, Sie wiederzuerkennen, während Sie die Seiten im Rahmen einer
-      einzelnen Session besuchen. Diese Session-Cookies tragen zur sicheren Nutzung
-      unseres Angebots bei und werden eingesetzt für Warenkörbe, Anmeldungen, etc.</p>
-
-      <h3>Cookies mit Ihrer Einwilligung</h3>
-      <p>Neben den Session-Cookies setzen wir Cookies ein, zu deren Nutzung Sie uns
-      zu Beginn der Sitzung die Erlaubnis erteilt haben. Das kann bspw. sein, um
-      Anmeldedaten über das Ende einer Sitzung hinaus zu speichern. Es können auch
-      Cookies zur Erfassung des Nutzungsverhaltens unserer Website sein, deren
-      Tracking Sie durch Opt-Out-Möglichkeiten entgegnen können. Nachfolgend sehen
-      Sie eine Übersicht dieser Cookies.</p>
-
-
-      <h4>Tracking durch Matomo</h4>
-      <p>Wir verwenden auf unseren Internetseiten das Webanalyse-Tool Matomo, um 
+  <h2 class="mt-4">Analyse des Besucher*innenverhaltens</h2>
+  <h4><strong>Matomo</strong></h4>
+  <p>Wir verwenden auf unseren Internetseiten das Webanalyse-Tool Matomo, um 
         mehr über die Nutzung der Seiten zu erfahren und um die Seiten zu verbessern.
-      Das Analysetool wird vom DDA auf einem eigenen Server betrieben, ein Datenverkehr
-      nach außen ist ausgeschlossen.
       In der von uns verwendeten Variante arbeitet Matomo mit einer Anonymisierung
       von IP-Adressen. Dabei werden die IP-Adressen vor einer etwaigen Nutzung
       für die Analyse des Nutzungsverhaltens gekürzt. Ein Personenbezug aus der
@@ -235,12 +160,27 @@
       auf der Website. Rechtsgrundlage für die Speicherung des Cookies ist die
       erteilte Einwilligung (Art. 6 Abs. 1 S. 1 lit. a DSGVO).
     </p>
-    <h5>Der Nutzung widersprechen</h5>
     <p>Sie können der Nutzung widersprechen, in dem Sie ein sogenannten &bdquo;Opt-Out-Cookie&ldquo;
     setzen. Hierzu haben Sie nachfolgend die Gelegenheit. </p>
     <div class="alert alert-light">
       <iframe style="border: 0; height: 200px; width: 807px; max-width:100% !important;" src="https://stats.bund.net/stats/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=de"></iframe>
     </div>
+
+    <h2 class="mt-4">JavaScript</h2>
+    <p>Zur Darstellung der Inhalte wird regelmäßig die Programmiersprache JavaScript verwendet. 
+      Sie können der Datenverarbeitung daher widersprechen, indem Sie die Ausführung von JavaScript 
+      in Ihrem Browser deaktivieren oder einen Einbindung JavaScript-Blocker installieren. 
+      Bitte beachten Sie, dass es hierdurch zu Funktionseinschränkungen auf der Website kommen kann.</p>
+
+      <h2 class="mt-4">Änderung unserer Datenschutzbestimmungen</h2>
+    <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht 
+      oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
+
+      <h2 class="mt-4">Fragen an den Datenschutzbeauftragten</h2>
+    <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail an  <a href="mailto:datenschutz@heuschrecken-monitoring.de">datenschutz@heuschrecken-monitoring.de</a>.</p>
+
+   
+     
       </div>
     </div>
   </div>

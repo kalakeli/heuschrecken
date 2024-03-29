@@ -1,7 +1,7 @@
 import './bootstrap';
 
-window.API_URL = 'http://localhost:8000';
-// window.API_URL = 'https://www.heuschrecken-monitoring.de';
+// window.API_URL = 'http://localhost:8000';
+window.API_URL = 'https://www.heuschrecken-monitoring.de';
 
 import * as Vue from 'vue';
 import * as VueRouter from 'vue-router';

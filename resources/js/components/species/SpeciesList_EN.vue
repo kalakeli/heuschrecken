@@ -1,21 +1,6 @@
 <template>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-3 col-xs-3 my-3 text-end pt-1">
-                <label for="suche">Search: </label>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-9 col-xs-9 my-3">
-                <form>
-                    <input type="text" class="form-control" placeholder="search starts after the 3rd letter" v-model="srch" />
-                    <p class="pt-2" v-if="((itemList) && (itemList.length===0))">
-                        <small class="text-danger ">
-                            No species fits your search!
-                        </small>
-                    </p>
-                </form>
-            </div>
-            <!-- <div class="col-12"><hr></div> -->
-        </div> 
+ 
         <div class="row">
             <div class="col-12">
                 <p>
@@ -38,10 +23,33 @@
                 </ul>
                 <hr>
             </div>
-        </div>        
+        </div>       
+
+        <div class="card border-custom-green mt-4 mb-5">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-3 col-xs-3 my-3 text-end pt-1">
+                        <label for="suche">Suche: </label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-9 col-xs-9 my-3">
+                        <form>
+                            <input type="text" class="form-control" placeholder="Suche beginnt ab 3. Buchstaben" v-model="srch" />
+                            <p class="pt-2" v-if="((itemList) && (itemList.length===0))">
+                                <small class="text-danger ">
+                                    Keine Art(en) entspricht dieser Angabe!
+                                </small>
+                            </p>
+                        </form>
+                    </div>
+                    <!-- <div class="col-12"><hr></div> -->
+                </div>    
+            </div>    
+        </div>    
+
+
         <transition name="fade" class="slide-fade">
             <div class="row" v-if="((ensiferaFamilies) && (ensiferaFamilies.length>0))">
-                <div class="col-lg-8 col-md-8 col-sm-12 col-6 border-end">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-6 border-end">
                     <h2 class="text-center">
                         Orthoptera - Grasshoppers, crickets, bush-crickets
                     </h2>
@@ -113,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-6">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-6">
                     <h2 class="text-center">
                         Mantodea - Mantids
                     </h2>
@@ -159,8 +167,24 @@
 
 
 <script>
-  import { defineComponent } from 'vue';
 
+function dynamicSort(property) {
+    var sortOrder = 1;
+    if(property[0] === "-") {
+        sortOrder = -1;
+        property = property.substr(1);
+    }
+    return function (a,b) {
+        /* next line works with strings and numbers, 
+         * and you may want to customize it to your needs
+         */
+        var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
+        return result * sortOrder;
+    }
+}
+
+
+  import { defineComponent } from 'vue';
 
   export default defineComponent({
     name: "SpeciesList",
@@ -219,6 +243,7 @@
                         }
                     }
                 })
+                theItems.sort(dynamicSort("familyScientific"));                
                 return theItems;
             }
         },
@@ -245,6 +270,7 @@
                         }
                     }
                 })
+                theItems.sort(dynamicSort("subFamilyScientific"));                
                 return theItems;
             }
         },        
@@ -270,6 +296,7 @@
                         }
                     }
                 })
+                theItems.sort(dynamicSort("familyScientific"));                
                 return theItems;
             }
         },
@@ -296,6 +323,7 @@
                         }
                     }
                 })
+                theItems.sort(dynamicSort("subFamilyScientific"));                
                 return theItems;
             }
         },

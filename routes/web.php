@@ -22,6 +22,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/datenschutz', [App\Http\Controllers\PagesController::class, 'dsgvo'] );
+Route::get('/dsgvo', [App\Http\Controllers\PagesController::class, 'dsgvo'] );
 Route::get('/impressum', [App\Http\Controllers\PagesController::class, 'imprint'] );
 Route::get('/orthopteraweb', [App\Http\Controllers\PagesController::class, 'orthopteraweb'] );
 Route::get('/methodik', [App\Http\Controllers\PagesController::class, 'methods'] );

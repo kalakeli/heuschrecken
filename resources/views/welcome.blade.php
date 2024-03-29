@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <base href="http://localhost:8000">
-    <!-- <base href="https://www.heuschrecken-monitoring.de"> -->
+    <!-- <base href="http://localhost:8000"> -->
+    <base href="https://www.heuschrecken-monitoring.de">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

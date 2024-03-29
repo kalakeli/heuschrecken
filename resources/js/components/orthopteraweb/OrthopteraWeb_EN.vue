@@ -2,23 +2,109 @@
 <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h1 style="text-center">OrthopteraWeb </h1>
-        <h2>
+            <h1 class="headline">
+                Grasshoppers of Germany - OrthopteraWeb 
+                <sup>
+                  <a href="./orthopteraweb" class="hint--bottom hint--rounded" data-hint="gesamte Projektliste anzeigen">
+                    <button type="button" class="btn btn-sm btn-light">
+                          <span class="icon list"></span>
+                    </button>                      
+                  </a>                
+                </sup>
+              </h1>
+
+        <h2 class="mt-4">
             Welcome to the german orthoptera portal &bdquo;<em>OrthopteraWeb</em>&ldquo;
         </h2>
-        <div class="card float-end ms-3" style="width:18rem;">
-            <div class="card-header text-bg-custom-pink text-white text-center">
-                Sign in
+
+        <div class="card float-end ms-3" style="width:26rem;">
+            <div class="card-header text-bg-custom-green text-white text-center">
+                 OrthopteraWeb
             </div>
 
             <div class="card-body">
-                <div class="d-grid gap-2">
-                    <a href="" class="btn btn-sm btn-custom-darkgreen">
-                        <span class="icon more"></span> Anmelden im Bundesportal
+                <div class="d-grid gap-2 text-center">
+                    <a href="https://daten.heuschrecken-portal.de/eingabe" target="_blank">
+                        <span class="icon more"></span> German Portal
                     </a>
                 </div>
+                <!-- <hr> -->
+                                        <h5 class="mt-2 text-center">
+                            <strong>Department of Biodiversity and Landscape Ecology <br>
+                         Osnabrück University</strong>
+                        </h5>
+                <h5>Dr. Dominik Poniatowski</h5>
+                <p>
+                    <small>
+                        Barbarastraße 11, D-49076 Osnabrück <br>
+                        Tel.: (+49) 0541-969-3494 <br>
+                        E-Mail: <a href="mailto:dponiatowski@uos.de">dponiatowski@uos.de</a>
+                    </small>
+                </p>   
+
+                <hr>
+                <h4 class="text-center mb-3">Länderportale</h4>
+                 <div class="d-grid gap-2 text-center">
+                        <a href="https://daten.bw.heuschrecken-portal.de/" target="_blank">
+                           <span class="icon more"></span> Baden-Württemberg
+                        </a>            
+                </div>         
+                <h5 class="text-center">
+                    <strong>Grasshopper Society of Baden-Württemberg (BW)</strong>
+                </h5>
+  
+                <h5 class="mt-3">Jule Zimmermann</h5>
+                <p>
+                    <small>Tel.: (+49) 0721-926-8816 <br>
+                    E-Mail: <a href="mailto:Juliane.Zimmermann@rpk.bwl.de">Juliane.Zimmermann@rpk.bwl.de</a>
+                    </small>
+                </p>   
+
+                <!--  -->
+                <hr>  
+                <div class="d-grid gap-2 text-center">
+                        <a href="https://daten.nrw.heuschrecken-portal.de/" target="_blank">
+                           <span class="icon more"></span> North Rhine-Westphalia
+                        </a>
+                </div>                 
+              <h5 class="text-center">
+                    <strong>Grasshopper Society of North Rhine-Westphalia</strong>
+                </h5>                   
+                <h5 class="mt-3">Dr. Andreas Kronshage </h5>
+                <p>
+                    <small>Education and Research Centre Heiliges Meer <br>
+                    Bergstraße 1, D-49509 Recke <br>
+                    Tel.: (+49) 05453-8079810 <br>
+                    E-Mail: <a href="mailto:Andreas.Kronshage@lwl.org">Andreas.Kronshage@lwl.org</a>
+                    </small>
+                </p>   
+
+                <!--  -->
+                <hr> 
+                <div class="d-grid gap-2 text-center">
+                        <a href="https://daten.rlp.heuschrecken-portal.de/" target="_blank">
+                           <span class="icon more"></span> Rhineland-Palatinate
+                        </a>
+                </div> 
+                <h5 class="text-center">
+                    <strong>Grasshopper Society Rhineland-Palatinate</strong>
+                </h5>                    
+
+                <h5>
+                    Alban Pfeifer
+                </h5>
+                <p>
+                    <small>
+                    Bahnhofsplatz 5, D-67240 Bobenheim-Roxheim  <br>
+                    Tel.: (+49) 06239-929515  <br>
+                    E-Mail: <a href="mailto:heuschrecken.rlp@googlemail.com">heuschrecken.rlp@googlemail.com</a>
+                    </small>
+                </p>                
             </div>
-        </div>           
+        </div>     
+
+
+           
         <p>
             Your observations are needed!
         </p>
@@ -30,9 +116,7 @@
             records available in Germany and make them visible. So far, more than 200,000 
             records have been stored in the system. Among them, 15.000 records were added 
             online by users of OrthopteraWeb (February 2024). In addition, it contains 
-            several thousand verified reports from 
-            <a href="https://observation.org/" target="_blank">Observation.org</a>, which were kindly 
-            made available to us by the Observation International Foundation. 
+            several thousand verified reports from partner organisations. 
         </p>
         <p>
             We therefore invite you to report current observations via OrthopteraWeb. 
@@ -58,6 +142,19 @@
         </p>
 
 
+      
+        <p>
+            OrthopteraWeb is operating with the support of the Grasshopper Societies of 
+            Baden-Württemberg, North Rhine-Westphalia and Rhineland-Palatinate. 
+        </p>
+        <p>
+            If you enter observations in Baden-Württemberg, North Rhine-Westphalia or 
+            Rhineland-Palatinate, the data is available to the respective grasshopper societies. 
+            They use the data, for example, for the preparation of atlases and Red Lists. 
+            In addition, the societies decide on the transfer of the data to third parties 
+            (for example to nature conservation authorities or universities). 
+
+        </p>
 
 
     <div class="card my-4 border-custom-green">
@@ -89,83 +186,9 @@
     </div>
 
 
-        <h3>
-            Regional portals
-        </h3>
-        <div class="card float-end ms-3" style="width:18rem;">
-            <div class="card-header text-bg-custom-green text-white">
-                Länderportale
-            </div>
-
-            <div class="card-body">
-                <ul class="pubList" style="margin-left:0;">
-                    <li>
-                        <a href="https://dgfo-articulata.de/deutschlandportal/heuschrecken/baden-wuerttemberg" target="_blank">
-                            Baden-Württemberg
-                        </a>
-                    </li>
-                    <hr>
-                    <li>
-                        <a href="https://dgfo-articulata.de/deutschlandportal/heuschrecken/nordrhein-westfalen" target="_blank">
-                            Nordrhein-Westfalen
-                        </a>
-                    </li>
-                    <hr>
-                    <li>
-                        <a href="https://dgfo-articulata.de/deutschlandportal/heuschrecken/rheinland-pfalz" target="_blank">
-                            Rheinland-Pfalz
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>        
-        <p>
-            OrthopteraWeb is operating with the support of the Grasshopper Societies of 
-            Baden-Württemberg, North Rhine-Westphalia and Rhineland-Palatinate. 
-        </p>
-        <p>
-            If you enter observations in Baden-Württemberg, North Rhine-Westphalia or 
-            Rhineland-Palatinate, the data is available to the respective grasshopper societies. 
-            They use the data, for example, for the preparation of atlases and Red Lists. 
-            In addition, the societies decide on the transfer of the data to third parties 
-            (for example to nature conservation authorities or universities). 
-
-        </p>
-
-        <h3>
-            Contacts
-        </h3>
-
-        <div class="row">
-
-            <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
-                <div class="card h-100 ">
-                    <div class="card-header text-bg-custom-darkgreen text-white">
-                        Bund
-                    </div>
-
-                    <div class="card-body">
-                        <h5>
-                            <strong>Department of Biodiversity and Landscape Ecology <br>
-                         Osnabrück University</strong>
-                        </h5>
-                        <h5>Dr. Dominik Poniatowski</h5>
-                        <p>
-                            <small>
-                                Barbarastraße 11, 49076 Osnabrück <br>
-                                Tel.: 0541-969-3494 <br>
-                                E-Mail: <a href="mailto:dponiatowski@uos.de">dponiatowski@uos.de</a>
-                            </small>
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-</div>
-<div class="row">
+<!-- <div class="row"> -->
             <!-- BW -->
-            <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
                 <div class="card h-100 ">
                     <div class="card-header text-bg-custom-green text-white">
                         Baden-Württemberg 
@@ -175,19 +198,19 @@
                         <h5>
                             <strong>Grasshopper Society of Baden-Württemberg (BW)</strong>
                         </h5>
-                        <h5>Prof. Dr. Peter Detzel</h5>
+                        <h5>Jule Zimmermann</h5>
                         <p>
                             <small>
-                            Zum Langwieser See 13, 70599 Stuttgart <br>
-                            Tel.: 0711 45 86 710 <br>
-                            <a href="mailto:peter.detzel1954@online.de">peter.detzel1954@online.de</a>
+                            &nbsp; <br>
+                            Tel.: 0721-926-8816 <br>
+                            <a href="mailto:Juliane.Zimmermann@rpk.bwl.de">Juliane.Zimmermann@rpk.bwl.de</a>
                             </small>
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- NRW -->
-            <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
                 <div class="card h-100 ">
                     <div class="card-header text-bg-custom-green text-white">
                         North Rhine-Westphalia
@@ -211,9 +234,9 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- RP -->
-            <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
                 <div class="card h-100 ">
                     <div class="card-header text-bg-custom-green text-white">
                         Rhineland-Palatinate
@@ -236,7 +259,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
 

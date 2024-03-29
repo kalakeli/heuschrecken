@@ -60,7 +60,7 @@
                                                     <hr>
                                                     <a :href="`https://daten.heuschrecken-portal.de/kartierliste/${item.key}`" target="_blank">
                                                         <div class="d-grid gap-2">
-                                                                <button class="btn btn-sm btn-custom-darkgreen">
+                                                                <button class="btn btn-sm btn-custom-darkgreen text-white">
                                                                     <span class="icon more"></span>
                                                                     zeige Fund im Portal
                                                                 </button>
@@ -68,7 +68,7 @@
                                                     </a>
                                                     <a :href="`artenliste/${item.species}`" target="_blank">
                                                         <div class="d-grid gap-2">
-                                                                <button class="btn btn-sm btn-custom-darkgreen mt-2">
+                                                                <button class="btn btn-sm btn-custom-darkgreen text-white mt-2">
                                                                     <span class="icon more"></span>
                                                                     mehr zur Art
                                                                 </button>

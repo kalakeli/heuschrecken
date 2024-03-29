@@ -1,10 +1,11 @@
 <template>
-    <div class="row mb-3"  v-if="((this.imageList) && (this.imageList.length>0))">
+    <div class="row mb-3"  v-if="((picSpecies) && (picSpecies.length>0))">
         <div class="col-12">
-            <h4>Bildergalerie <small>[klicken Sie ein Bild an für eine vergrößerte Version]</small> </h4>
+            <h4>Artbilder </h4>
             <transition name="fade" class="slide-fade">
-                <div v-if="((this.imageList) && (this.imageList.length>0))">
-                    <figure v-for="item in imageList" :key="item.imgPKID" class="float-start me-2 mb-2" style="max-width:250px;">
+                <div>
+                    <figure v-for="item in picSpecies" :key="item.imgPKID" class="float-start me-2 mb-2" style="max-width:250px; position:relative;">
+                        <span class="icon search" style="position: absolute; top: 10px; right: 10px; color: rgb(0, 0, 0); opacity: 0.5; z-index: 1000;"></span>
                         <a v-if="((item.genderHTML) && (item.genderHTML.length>0))" :href="item.img_lg" data-lightbox="img-gallery" :data-title="`${item.imgTitle} <span style='font-size:larger'>${item.genderHTML}</span> &copy; ${item.copyrightTitle}`">
                             <img :src="item.img_sm" alt="SpeciesPicture" class="img-fluid img-thumbnail">
                         </a>
@@ -12,9 +13,32 @@
                             <img :src="item.img_sm" alt="SpeciesPicture" class="img-fluid img-thumbnail">
                         </a>
                         <figcaption>
-                            <span v-if="((item.genderID===10) || (item.genderID===20))" v-html="`${item.imgTitle} <span style='font-size:larger'>${item.genderHTML}</span>`"></span>
-                            <span v-if="((item.flagHabitat===1))" v-html="`${item.imgTitle}`"></span>
-                            <span v-html="`&copy; ${item.copyrightTitle}`"></span>
+                            <!-- <span v-if="((item.genderID===10) || (item.genderID===20))" v-html="`${item.imgTitle} <span style='font-size:larger'>${item.genderHTML}</span>`"></span> -->
+                            <!-- <span v-if="((item.flagHabitat===1))" v-html="`${item.imgTitle}`"></span> -->
+                            <!-- <span v-html="`&copy; ${item.copyrightTitle}`"></span> -->
+                        </figcaption>
+                    </figure>
+                </div>
+            </transition>
+        </div>
+    </div>
+    <div class="row mb-3"  v-if="((picHabitats) && (picHabitats.length>0))">
+        <div class="col-12">
+            <h4>Habitatbilder </h4>
+            <transition name="fade" class="slide-fade">
+                <div>
+                    <figure v-for="item in picHabitats" :key="item.imgPKID" class="float-start me-2 mb-2" style="max-width:250px; position:relative;">
+                        <span class="icon search" style="position: absolute; top: 10px; right: 10px; color: rgb(0, 0, 0); opacity: 0.5; z-index: 1000;"></span>
+                        <a v-if="((item.genderHTML) && (item.genderHTML.length>0))" :href="item.img_lg" data-lightbox="img-gallery" :data-title="`${item.imgTitle} <span style='font-size:larger'>${item.genderHTML}</span> &copy; ${item.copyrightTitle}`">
+                            <img :src="item.img_sm" alt="SpeciesPicture" class="img-fluid img-thumbnail">
+                        </a>
+                        <a v-else :href="item.img_lg" data-lightbox="img-gallery" :data-title="`${item.imgTitle} &copy; ${item.copyrightTitle}`">
+                            <img :src="item.img_sm" alt="SpeciesPicture" class="img-fluid img-thumbnail">
+                        </a>
+                        <figcaption>
+                            <!-- <span v-if="((item.genderID===10) || (item.genderID===20))" v-html="`${item.imgTitle} <span style='font-size:larger'>${item.genderHTML}</span>`"></span> -->
+                            <!-- <span v-if="((item.flagHabitat===1))" v-html="`${item.imgTitle}`"></span> -->
+                            <!-- <span v-html="`&copy; ${item.copyrightTitle}`"></span> -->
                         </figcaption>
                     </figure>
                 </div>
@@ -47,7 +71,24 @@
             },
 
         },           
-        components: {
+        computed: {
+
+            picSpecies() {
+                if ((this.imageList) && (this.imageList.length>0)) 
+                {
+                    return this.imageList.filter( (item) => {
+                        return item.imgPath === "species"
+                    })
+                }
+            }, 
+            picHabitats() {
+                if ((this.imageList) && (this.imageList.length>0)) 
+                {
+                    return this.imageList.filter( (item) => {
+                        return item.imgPath === "habitats"
+                    })
+                }
+            }
            
         },
         methods: {

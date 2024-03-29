@@ -2,21 +2,101 @@
 <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h1 style="text-center">OrthopteraWeb </h1>
-        <h2>
+            <h1 class="headline">
+                Das deutsche Heuschreckenportal - OrthopteraWeb 
+                <sup>
+                  <a href="./orthopteraweb" class="hint--bottom hint--rounded" data-hint="gesamte Projektliste anzeigen">
+                    <button type="button" class="btn btn-sm btn-light">
+                          <span class="icon list"></span>
+                    </button>                      
+                  </a>                
+                </sup>
+              </h1>
+        <h2 class="mt-4">
         Willkommen auf dem deutschen Heuschreckenportal &bdquo;<em>OrthopteraWeb</em>&ldquo;
         </h2>
-        <div class="card float-end ms-3" style="width:18rem;">
-            <div class="card-header text-bg-custom-pink text-white text-center">
-                Anmeldung
+        <div class="card float-end ms-3" style="width:26rem;">
+            <div class="card-header text-bg-custom-green text-white text-center">
+                Anmeldung OrthopteraWeb
             </div>
 
             <div class="card-body">
-                <div class="d-grid gap-2">
-                    <a href="" class="btn btn-sm btn-custom-darkgreen">
-                        <span class="icon more"></span> Anmeldung im Bundesportal
+                <div class="d-grid gap-2 text-center">
+                    <a href="https://daten.heuschrecken-portal.de/eingabe" target="_blank">
+                        <span class="icon more"></span> Bundesportal
                     </a>
                 </div>
+                <h5 class="mt-2 text-center">
+                    <strong>Abteilung für Biodiversität und Landschaftsökologie, Universität Osnabrück</strong>
+                </h5>                
+                <!-- <hr>                -->
+                        <h5>Dr. Dominik Poniatowski</h5>
+                        <p>
+                            <small>
+                                Barbarastraße 11, 49076 Osnabrück <br>
+                                Tel.: 0541-969-3494 <br>
+                                E-Mail: <a href="mailto:dponiatowski@uos.de">dponiatowski@uos.de</a>
+                            </small>
+                        </p>       
+
+                <hr>
+                <h4 class="text-center mb-3">Länderportale</h4>
+                 <div class="d-grid gap-2 text-center">
+                        <a href="https://daten.bw.heuschrecken-portal.de/" target="_blank">
+                           <span class="icon more"></span> Baden-Württemberg
+                        </a>            
+                </div>                 
+                <h5 class="text-center">
+                    <strong>Arbeitsgemeinschaft Heuschrecken Baden-Württemberg</strong>
+                </h5>
+  
+                <h5 class="mt-3">Jule Zimmermann</h5>
+                <p>
+                    <small>Tel.: 0721-926-8816 <br>
+                    E-Mail: <a href="mailto:Juliane.Zimmermann@rpk.bwl.de">Juliane.Zimmermann@rpk.bwl.de</a>
+                    </small>
+                </p>   
+
+                <!--  -->
+                <hr>  
+                <div class="d-grid gap-2 text-center">
+                        <a href="https://daten.nrw.heuschrecken-portal.de/" target="_blank">
+                           <span class="icon more"></span> Nordrhein-Westfalen
+                        </a>
+                </div>                 
+              <h5 class="text-center">
+                    <strong>Arbeitskreis Heuschrecken Nordrhein-Westfalen</strong>
+                </h5>                   
+                <h5 class="mt-3">Dr. Andreas Kronshage </h5>
+                <p>
+                    <small>Bildungs- und Forschungszentrum Heiliges Meer <br>
+                    Bergstraße 1, 49509 Recke <br>
+                    Tel.: 05453-8079810 <br>
+                    E-Mail: <a href="mailto:Andreas.Kronshage@lwl.org">Andreas.Kronshage@lwl.org</a>
+                    </small>
+                </p>   
+
+                <!--  -->
+                <hr> 
+                <div class="d-grid gap-2 text-center">
+                        <a href="https://daten.rlp.heuschrecken-portal.de/" target="_blank">
+                           <span class="icon more"></span> Rheinland-Pfalz
+                        </a>
+                </div> 
+                <h5 class="text-center">
+                    <strong>Arbeitskreis Heuschrecken Rheinland-Pfalz</strong>
+                </h5>                    
+
+                <h5>
+                    Alban Pfeifer
+                </h5>
+                <p>
+                    <small>
+                    Bahnhofsplatz 5, 67240 Bobenheim-Roxheim  <br>
+                    Tel.: 06239-929515  <br>
+                    E-Mail: <a href="mailto:heuschrecken.rlp@googlemail.com">heuschrecken.rlp@googlemail.com</a>
+                    </small>
+                </p>                
             </div>
         </div>           
         <p>
@@ -26,11 +106,7 @@
         Mit dem Portal möchten wir möglichst viele in Deutschland verfügbare Heuschreckenfunde 
         bündeln und sichtbar machen. Bislang wurden mehr als 200.000 Datensätze im System 
         hinterlegt und über 15.000 Funde über die Online-Eingabe gemeldet (Stand Februar 2024). 
-        Zudem enthält es mehrere Tausend verifizierte Meldungen aus dem Beobachtungsportal 
-        <a href="https://observation.org/" target="_blank">
-        <span class="icon more"></span> Observation.org
-        </a>, die uns durch die 
-        Stiftung Observation International freundlicherweise zur Verfügung gestellt wurden. 
+        Zudem enthält es mehrere Tausend verifizierte Meldungen von verschiedenen Partnerplattformen.
         Anhand der zusammengetragenen Daten lässt sich die Verbreitung der Arten schon gut 
         nachvollziehen. Es sind aber längst nicht alle Lücken geschlossen.   
 
@@ -66,6 +142,21 @@
         Falls Ihnen Unstimmigkeiten auffallen oder Sie Verbesserungsvorschläge haben, kontaktieren Sie uns bitte. 
     </p>
 
+        <p>
+            Das deutsche Heuschreckenportal wird mit Unterstützung der Landesarbeitskreise Baden-Württemberg, 
+            Nordrhein-Westfalens und Rheinland-Pfalz betrieben. 
+        </p>
+        <p>
+            Wenn Sie Funde in Baden-Württemberg, Nordrhein-Westfalen oder Rheinland-Pfalz eingeben, 
+            stehen die Daten dem jeweiligen Heuschreckenarbeitskreis zur Verfügung. Die 
+            Heuschreckenarbeitskreise nutzen die Daten zum Beispiel für die Erstellung von Atlanten. 
+            Zudem entscheiden die Arbeitskreise über die Weitergabe der Daten an Dritte (zum Beispiel 
+            an Naturschutzbehörden oder Forschungseinrichtungen). 
+        </p>
+
+      </div>
+    </div>
+
     <div class="card my-4 border-custom-green">
         <div class="card-body">
             <div class="row">
@@ -93,169 +184,6 @@
             </p>
         </div>
     </div>
-
-
-    
-    
-    
-    
-    
-
-        <h3>
-            Länderportale
-        </h3>
-        <div class="card float-end ms-3" style="width:18rem;">
-            <div class="card-header text-bg-custom-green text-white">
-                Länderportale
-            </div>
-
-            <div class="card-body">
-                <ul class="pubList" style="margin-left:0;">
-                    <li>
-                        <a href="https://dgfo-articulata.de/deutschlandportal/heuschrecken/baden-wuerttemberg" target="_blank">
-                            Baden-Württemberg
-                        </a>
-                    </li>
-                    <hr>
-                    <li>
-                        <a href="https://dgfo-articulata.de/deutschlandportal/heuschrecken/nordrhein-westfalen" target="_blank">
-                            Nordrhein-Westfalen
-                        </a>
-                    </li>
-                    <hr>
-                    <li>
-                        <a href="https://dgfo-articulata.de/deutschlandportal/heuschrecken/rheinland-pfalz" target="_blank">
-                            Rheinland-Pfalz
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>        
-        <p>
-            Das deutsche Heuschreckenportal wird mit Unterstützung der Landesarbeitskreise Baden-Württemberg, 
-            Nordrhein-Westfalens und Rheinland-Pfalz betrieben. 
-        </p>
-        <p>
-            Wenn Sie Funde in Baden-Württemberg, Nordrhein-Westfalen oder Rheinland-Pfalz eingeben, 
-            stehen die Daten dem jeweiligen Heuschreckenarbeitskreis zur Verfügung. Die 
-            Heuschreckenarbeitskreise nutzen die Daten zum Beispiel für die Erstellung von Atlanten. 
-            Zudem entscheiden die Arbeitskreise über die Weitergabe der Daten an Dritte (zum Beispiel 
-            an Naturschutzbehörden oder Forschungseinrichtungen). 
-        </p>
-
-        <h3>
-            Kontakte
-        </h3>
-
-        <div class="row">
-
-            <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
-                <div class="card h-100 ">
-                    <div class="card-header text-bg-custom-darkgreen text-white">
-                        Bund
-                    </div>
-
-                    <div class="card-body">
-                        <h5>
-                            <strong>Abteilung für Biodiversität und Landschaftsökologie <br>
-                        Universität Osnabrück</strong>
-                        </h5>
-                        <h5>Dr. Dominik Poniatowski</h5>
-                        <p>
-                            <small>
-                                Barbarastraße 11, 49076 Osnabrück <br>
-                                Tel.: 0541-969-3494 <br>
-                                E-Mail: <a href="mailto:dponiatowski@uos.de">dponiatowski@uos.de</a>
-                            </small>
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-</div>
-<div class="row">
-            <!-- BW -->
-            <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
-                <div class="card h-100 ">
-                    <div class="card-header text-bg-custom-green text-white">
-                        Baden-Württemberg 
-                    </div>
-
-                    <div class="card-body">
-                        <h5>
-                            <strong>Arbeitsgemeinschaft Heuschrecken Baden-Württemberg</strong>
-                        </h5>
-                        <h5>Jule Zimmermann</h5>
-                        <p>
-                            <small>
-                            &nbsp; <br>
-                            Tel.: 0721-926-8816 <br>
-                            <a href="mailto:Juliane.Zimmermann@rpk.bwl.de">Juliane.Zimmermann@rpk.bwl.de</a>
-                            </small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- NRW -->
-            <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
-                <div class="card h-100 ">
-                    <div class="card-header text-bg-custom-green text-white">
-                        Nordrhein-Westfalen 
-                    </div>
-
-                    <div class="card-body">
-                        <h5>
-                            <strong>Arbeitskreis Heuschrecken Nordrhein-Westfalen </strong>
-                        </h5>
-                        <h5>
-                            Dr. Andreas Kronshage 
-                        </h5>
-                        <p>
-                            <small>
-                                Bildungs- und Forschungszentrum Heiliges Meer <br>
-                                Bergstraße 1, 49509 Recke  <br>
-                                Tel.: 05453-8079810 <br>
-                                E-Mail: <a href="mailto:Andreas.Kronshage@lwl.org">Andreas.Kronshage@lwl.org</a>
-
-                            </small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- RP -->
-            <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
-                <div class="card h-100 ">
-                    <div class="card-header text-bg-custom-green text-white">
-                        Rheinland-Pfalz 
-                    </div>
-
-                    <div class="card-body">
-                        <h5>
-                            <strong>Arbeitskreis Heuschrecken Rheinland-Pfalz </strong>
-                        </h5>
-                        <h5>
-                            Alban Pfeifer
-                        </h5>
-                        <p>
-                            <small>
-                            Bahnhofsplatz 5, 67240 Bobenheim-Roxheim  <br>
-                            Tel.: 06239-929515  <br>
-                            E-Mail: <a href="mailto:heuschrecken.rlp@googlemail.com">heuschrecken.rlp@googlemail.com</a>
-                            </small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-      </div>
-    </div>
-
 
 
   </div>    

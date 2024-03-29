@@ -9,9 +9,9 @@
             <h1 class="headline">
                 Methods 
                 <sup>
-                  <a href="./methodik" class="hint--bottom hint--rounded" data-hint="show all method entries">
+                  <a href="./methods" class="hint--bottom hint--rounded" data-hint="show all method entries">
                     <button type="button" class="btn btn-sm btn-light">
-                          <i class="fa-solid fa-rotate"></i>
+                          <span class="icon list"></span>
                     </button>                      
                   </a>                
                 </sup>

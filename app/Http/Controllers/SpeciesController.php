@@ -158,9 +158,26 @@ class SpeciesController extends Controller
         return Species::join('lutSystematik as lutOrders', 'lutOrders.lutPKID', 'tblSpecies.orderID')
             ->join('lutSystematik as lutFamilies', 'lutFamilies.lutPKID', 'tblSpecies.familyID')
             ->join('lutSystematik as lutSubFamilies', 'lutSubFamilies.lutPKID', 'tblSpecies.subFamilyID')
-            ->select(\DB::raw('tblSpecies.*, lutOrders.germanName as orderGerman, lutFamilies.germanName as familyGerman, lutFamilies.englishName as familyEnglish, lutFamilies.scientificName as familyScientific, lutSubFamilies.germanName as subFamilyGerman, lutSubFamilies.scientificName as subFamilyScientific, lutOrders.scientificName as orderScientific '))
+            ->join('lutSystematik as lutSubOrders', 'lutSubOrders.lutPKID', 'tblSpecies.subOrderID')
+            ->select(\DB::raw('tblSpecies.*, lutOrders.germanName as orderGerman, lutSubOrders.germanName as subOrderGerman, lutFamilies.germanName as familyGerman, lutFamilies.englishName as familyEnglish, lutFamilies.scientificName as familyScientific, lutSubFamilies.germanName as subFamilyGerman, lutSubFamilies.scientificName as subFamilyScientific, lutOrders.scientificName as orderScientific '))
             ->where('tblSpecies.flagShow', '=', 1)
             ->orderBy('tblSpecies.familyID', 'ASC')
+            ->orderBy('tblSpecies.scientificName', 'ASC')
+            ->get();
+    }
+    
+    /**
+     * Display a listing of the resource.
+     */
+    public function showByFamily($id)
+    {
+        return Species::join('lutSystematik as lutOrders', 'lutOrders.lutPKID', 'tblSpecies.orderID')
+            ->join('lutSystematik as lutFamilies', 'lutFamilies.lutPKID', 'tblSpecies.familyID')
+            ->join('lutSystematik as lutSubFamilies', 'lutSubFamilies.lutPKID', 'tblSpecies.subFamilyID')
+            ->join('lutSystematik as lutSubOrders', 'lutSubOrders.lutPKID', 'tblSpecies.subOrderID')
+            ->select(\DB::raw('tblSpecies.*, lutOrders.germanName as orderGerman, lutSubOrders.germanName as subOrderGerman, lutFamilies.germanName as familyGerman, lutFamilies.englishName as familyEnglish, lutFamilies.scientificName as familyScientific, lutSubFamilies.germanName as subFamilyGerman, lutSubFamilies.scientificName as subFamilyScientific, lutOrders.scientificName as orderScientific '))
+            ->where('tblSpecies.flagShow', '=', 1)
+            ->where('tblSpecies.familyID', '=', $id)
             ->orderBy('tblSpecies.scientificName', 'ASC')
             ->get();
     }

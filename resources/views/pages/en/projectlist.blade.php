@@ -9,9 +9,9 @@
             <h1 class="headline">
                 Projects 
                 <sup>
-                  <a href="./projekte" class="hint--bottom hint--rounded" data-hint="show all projects">
+                  <a href="./projects" class="hint--bottom hint--rounded" data-hint="show all projects">
                     <button type="button" class="btn btn-sm btn-light">
-                          <i class="fa-solid fa-rotate"></i>
+                          <span class="icon list"></span>
                     </button>                      
                   </a>                
                 </sup>
