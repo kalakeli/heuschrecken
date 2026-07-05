@@ -100,59 +100,42 @@
             </div>
         </div>           
         <p>
-        Machen Sie mit, die spannende Welt der Heuschrecken und ihrer Verwandten zu erkunden!
+        Machen Sie mit und entdecken Sie die faszinierende Welt der Heuschrecken und ihrer Verwandten!
     </p>
     <p>
-        Mit dem Portal möchten wir möglichst viele in Deutschland verfügbare Heuschreckenfunde 
-        bündeln und sichtbar machen. Bislang wurden mehr als 200.000 Datensätze im System 
-        hinterlegt und über 15.000 Funde über die Online-Eingabe gemeldet (Stand Februar 2024). 
-        Zudem enthält es mehrere Tausend verifizierte Meldungen von verschiedenen Partnerplattformen.
-        Anhand der zusammengetragenen Daten lässt sich die Verbreitung der Arten schon gut 
-        nachvollziehen. Es sind aber längst nicht alle Lücken geschlossen.   
-
+        Mit dem Deutschen Heuschreckenportal möchten wir möglichst viele in Deutschland verfügbare Heuschreckenfunde bündeln und sichtbar machen. Inzwischen umfasst das Portal etwa 380.000 Datensätze (Stand: Juni 2026). Dazu zählen über 200.000 Datensätze aus bestehenden Datenquellen, rund 160.000 verifizierte Meldungen aus verschiedenen Partnerplattformen sowie mehr als 18.000 Funde, die über die Online-Eingabe gemeldet wurden. 
     </p>
     <p>
-        Wir möchten Sie daher herzlich dazu einladen, aktuelle Funde über das Portal zu melden. 
-        Denn nur anhand historischer und aktueller Verbreitungsdaten lassen sich mögliche 
-        Arealveränderungen nachvollziehen. Diese Informationen sind wiederum eine wichtige 
-        Grundlage für die Erstellung von Gefährdungsanalysen und Roten Listen. Derzeit nutzen 
-        wir die Daten zum Beispiel für die Revision der Roten Liste der Fang- und Heuschrecken Deutschlands. 
+        Ein besonderer Dank gilt der 
+        <a href="https://observation-international.org/de/" target="_blank">
+            Stiftung Observation International
+        </a>, mit denen wir seit 2020 jährlich Daten austauschen.
+        Die zusammengetragenen Daten ermöglichen bereits einen guten Überblick über die Verbreitung der Arten – dennoch bestehen weiterhin zahlreiche Erfassungslücken.
     </p>
     <p>
-        Mit dem Portal ermöglichen wir Ihnen, Ihre Beobachtungen zu erfassen, Daten zu exportieren 
-        und Informationen über die Verbreitung von Arten zu recherchieren. 
+        Wir laden Sie herzlich ein, aktuelle Beobachtungen über das Portal zu melden. Nur durch die Kombination historischer und aktueller Nachweise lassen sich Veränderungen der Verbreitung zuverlässig nachvollziehen. Diese Informationen bilden eine wichtige Grundlage für Gefährdungsanalysen und die Erstellung Roter Listen. Die Daten wurden beispielsweise für die Überarbeitung der Roten Liste der Fang- und Heuschrecken Deutschlands genutzt.
     </p>
     <p>
-        Es können neben Heuschrecken auch Funde von Fangschrecken im Portal eingeben werden. 
-        Zudem gibt es ein eigenes Portal für Schaben und Ohrwürmer. 
+        Das Portal bietet Ihnen die Möglichkeit, eigene Beobachtungen zu erfassen, Daten zu exportieren und Informationen zur Verbreitung der Arten zu recherchieren.
+    </p>
+    <p>Neben Heuschrecken können auch Funde von Fangschrecken eingegeben werden.</p>
+    <p>
+        Die Qualität der Beobachtungsdaten wird durch autorisierte Expertinnen und Experten sichergestellt. Um die Prüfung Ihrer Meldungen zu erleichtern, laden Sie nach Möglichkeit Fotos und/oder Tonaufnahmen der beobachteten Tiere hoch.
     </p>
     <p>
-        Die Plausibilität der Beobachtungen wird durch autorisierte Expertinnen und Experten 
-        gewährleistet. Um die Prüfung einer Meldung zu erleichtern, laden Sie nach Möglichkeit 
-        bitte Fotos und/oder Tondateien des beobachteten Tieres hoch. 
+       Ergänzt wird das Portal durch die kostenlose App „Heuschrecken Deutschland“, mit der Beobachtungen ebenfalls gemeldet werden können. 
+       Sie ist für Android im <a href="https://play.google.com/store/apps/details?id=org.infinitenature.app.flora.heuschrecken&hl=de" target="_blank">Google Play Store</a> 
+       und für das iPhone im App Store erhältlich.
     </p>
     <p>
-        Ergänzt wird das Portal durch eine App, mit der Funde ebenfalls gemeldet werden können. 
-        Die App ist kostenlos und im Google Play Store unter dem Namen 
-        <a href="https://play.google.com/store/apps/details?id=com.novimapp.werbeo.app.heuschrecken&hl=de&gl=US" target="_blank">
-         <span class="icon more"></span>„Heuschrecken Deutschland“
-         </a> verfügbar. 
+        Falls Ihnen Unstimmigkeiten auffallen oder Sie Anregungen zur Verbesserung haben, freuen wir uns über Ihre Nachricht.
     </p>
     <p>
-        Falls Ihnen Unstimmigkeiten auffallen oder Sie Verbesserungsvorschläge haben, kontaktieren Sie uns bitte. 
+        Das Deutsche Heuschreckenportal wird mit Unterstützung der Landesarbeitskreise Baden-Württemberg, Nordrhein-Westfalen und Rheinland-Pfalz betrieben.
     </p>
-
-        <p>
-            Das deutsche Heuschreckenportal wird mit Unterstützung der Landesarbeitskreise Baden-Württemberg, 
-            Nordrhein-Westfalens und Rheinland-Pfalz betrieben. 
-        </p>
-        <p>
-            Wenn Sie Funde in Baden-Württemberg, Nordrhein-Westfalen oder Rheinland-Pfalz eingeben, 
-            stehen die Daten dem jeweiligen Heuschreckenarbeitskreis zur Verfügung. Die 
-            Heuschreckenarbeitskreise nutzen die Daten zum Beispiel für die Erstellung von Atlanten. 
-            Zudem entscheiden die Arbeitskreise über die Weitergabe der Daten an Dritte (zum Beispiel 
-            an Naturschutzbehörden oder Forschungseinrichtungen). 
-        </p>
+    <p>
+        Werden Funde aus Baden-Württemberg, Nordrhein-Westfalen oder Rheinland-Pfalz eingegeben, stehen diese zusätzlich dem jeweiligen Landesarbeitskreis zur Verfügung. Die Arbeitskreise nutzen die Daten unter anderem für die Erstellung von Verbreitungsatlanten und entscheiden über eine mögliche Weitergabe an Dritte, beispielsweise an Naturschutzbehörden oder Forschungseinrichtungen.
+    </p>
 
       </div>
     </div>
