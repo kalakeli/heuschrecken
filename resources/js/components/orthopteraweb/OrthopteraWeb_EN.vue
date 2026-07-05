@@ -14,7 +14,7 @@
               </h1>
 
         <h2 class="mt-4">
-            Welcome to the german orthoptera portal &bdquo;<em>OrthopteraWeb</em>&ldquo;
+            Welcome to the German Grasshopper Portal "OrthopteraWeb"
         </h2>
 
         <div class="card float-end ms-3" style="width:26rem;">
@@ -104,56 +104,39 @@
         </div>     
 
 
-           
-        <p>
-            Your observations are needed!
-        </p>
-        <p>
-            Join us in exploring the exciting world of grasshoppers and their allies! 
-        </p>
-        <p>
-            With OrthopteraWeb we would like to pool as many as possible grasshopper 
-            records available in Germany and make them visible. So far, more than 200,000 
-            records have been stored in the system. Among them, 15.000 records were added 
-            online by users of OrthopteraWeb (February 2024). In addition, it contains 
-            several thousand verified reports from partner organisations. 
-        </p>
-        <p>
-            We therefore invite you to report current observations via OrthopteraWeb. 
-            Historical and recent distribution data are required to identify range 
-            shifts and their underlying drivers. These information are again an important 
-            basis for the analysis of threats and the preparation of Red Lists. 
-        </p>
-        <p>
-            With OrthopteraWeb we enable you to record your observations, export data 
-            and search for information on the distribution of species. 
-        </p>
-        <p>
-            In addition to grasshoppers, observations of Mantodea can be entered in OrthopteraWeb. 
-        </p>
-        <p>
-            The validity of the observations should be ensured by authorized experts. 
-            To facilitate the verification of a record, please upload photos and/or 
-            sound files of the observed animal. 
-        </p>
-        <p>
-            If you have suggestions which may help us to improve the web portal, 
-            please do not hesitate to contact us. 
-        </p>
 
-
-      
         <p>
-            OrthopteraWeb is operating with the support of the Grasshopper Societies of 
-            Baden-Württemberg, North Rhine-Westphalia and Rhineland-Palatinate. 
+            Join us in exploring the fascinating world of grasshoppers and their relatives!
         </p>
         <p>
-            If you enter observations in Baden-Württemberg, North Rhine-Westphalia or 
-            Rhineland-Palatinate, the data is available to the respective grasshopper societies. 
-            They use the data, for example, for the preparation of atlases and Red Lists. 
-            In addition, the societies decide on the transfer of the data to third parties 
-            (for example to nature conservation authorities or universities). 
-
+            OrthopteraWeb aims to compile and make accessible as many grasshopper records from Germany as possible. As of June 2026, the portal contains approximately 380,000 records, including more than 200,000 records from existing data sources, around 160,000 verified records from partner platforms, and more than 18,000 observations submitted through the online recording system.
+        </p>
+        <p>
+            We would like to express our sincere thanks to the <a href="https://observation-international.org/de/" target="_blank">Observation International Foundation</a>, with whom we have exchanged data annually since 2020. The compiled records already provide a comprehensive overview of the distribution of German grasshopper species, although considerable recording gaps still remain.
+        </p>
+        <p>
+            We warmly invite you to contribute your own observations. Only by combining historical and recent occurrence records can changes in species distributions be reliably assessed. These data provide an essential basis for conservation status assessments and the preparation of Red Lists. For example, the records were used for the revision of the German Red List of grasshoppers and praying mantises. 
+        </p>
+        <p>
+            OrthopteraWeb allows you to submit your own observations, export data, and explore the distribution of species throughout Germany.
+        </p>
+        <p>
+            In addition to grasshoppers, records of praying mantises can also be submitted.
+        </p>
+        <p>
+            The quality of submitted records is ensured through expert validation. To facilitate the verification process, we kindly ask you to upload photographs and/or sound recordings of the observed individuals whenever possible.
+        </p>
+        <p>
+            The portal is complemented by the free "Grasshoppers of Germany" app, which also allows observations to be submitted. The app is available for Android on Google Play and for iPhone on the App Store.
+        </p>
+        <p>
+            If you notice any inconsistencies or have suggestions for improvement, we would be pleased to hear from you.
+        </p>
+        <p>
+            OrthopteraWeb is operated with the support of the regional grasshopper recording groups of Baden-Württemberg, North Rhine-Westphalia, and Rhineland-Palatinate.
+        </p>
+        <p>
+            Records submitted from Baden-Württemberg, North Rhine-Westphalia, or Rhineland-Palatinate are also made available to the respective regional recording groups. These groups use the data, among other purposes, to prepare regional distribution atlases and decide on the sharing of records with third parties, such as conservation authorities or research institutions.
         </p>
 
 
