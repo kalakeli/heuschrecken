@@ -1,0 +1,1 @@
+import{_ as o,r as t,o as r,c as n,a as c}from"./app-86a6fd8e.js";const s={mounted(){}};function a(_,p,u,d,i,l){const e=t("router-view");return r(),n("div",null,[c(e)])}const f=o(s,[["render",a]]);export{f as default};

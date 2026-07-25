@@ -1,0 +1,1 @@
+import{_ as o,r as s,o as c,c as n,a as r,b as e}from"./app-86a6fd8e.js";const a={mounted(){}},_={class:"container-fluid mt-4"},d=e("div",{class:"row justify-content-center"},[e("div",{class:"col-12"},[e("h1",null,"Methodik")])],-1);function i(l,p,u,f,m,h){const t=s("router-view");return c(),n("div",_,[d,r(t)])}const $=o(a,[["render",i]]);export{$ as default};
